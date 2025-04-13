@@ -1,0 +1,37 @@
+Disk /dev/mmcblk0: 3.64 GiB, 3909091328 bytes, 7634944 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 98101B32-BBE2-4BF2-A06E-2BB33D000C20
+
+Device           Start    End Sectors  Size Type
+/dev/mmcblk0p1      34   2081    2048    1M unknown
+/dev/mmcblk0p2    2082   4129    2048    1M unknown
+/dev/mmcblk0p3    4130   4641     512  256K unknown
+/dev/mmcblk0p4    4642   5153     512  256K unknown
+/dev/mmcblk0p5    5154   8737    3584  1.8M unknown
+/dev/mmcblk0p6    8738  12321    3584  1.8M unknown
+/dev/mmcblk0p7   12322  12833     512  256K unknown
+/dev/mmcblk0p8   12834  13345     512  256K unknown
+/dev/mmcblk0p9   13346  13857     512  256K unknown
+/dev/mmcblk0p10  13858  14369     512  256K unknown
+/dev/mmcblk0p11  14370  15393    1024  512K unknown
+/dev/mmcblk0p12  15394  16417    1024  512K unknown
+/dev/mmcblk0p13  16418  16929     512  256K unknown
+/dev/mmcblk0p14  16930  17441     512  256K unknown
+/dev/mmcblk0p15  17442  17953     512  256K unknown
+/dev/mmcblk0p16  17954  18465     512  256K unknown
+/dev/mmcblk0p17  18466  18977     512  256K unknown
+/dev/mmcblk0p18  18978  20513    1536  768K unknown
+/dev/mmcblk0p19  20514  22049    1536  768K unknown
+/dev/mmcblk0p20  22050  24097    2048    1M unknown
+/dev/mmcblk0p21  24098  25121    1024  512K unknown
+/dev/mmcblk0p22  25122  25633     512  256K unknown
+/dev/mmcblk0p23  25634  46113   20480   10M unknown
+/dev/mmcblk0p24  46114  66593   20480   10M unknown
+/dev/mmcblk0p25  66594  80929   14336    7M unknown
+/dev/mmcblk0p26  80930  95265   14336    7M unknown
+/dev/mmcblk0p27  95266 345121  249856  122M unknown
+/dev/mmcblk0p28 345122 594977  249856  122M unknown
+/dev/mmcblk0p29 594978 598049    3072  1.5M unknown

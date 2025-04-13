@@ -1,0 +1,429 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x411fd090]
+[    0.000000] Linux version 5.4.213 (build@jammy) (gcc version 8.4.0 (OpenWrt GCC 8.4.0 0.1-73-ga961c719ff)) #0 SMP PREEMPT Sun Oct 24 09:01:35 2021
+[    0.000000] Machine model: Qualcomm Technologies, Inc. IPQ9574/Alta-Route10
+[    0.000000] On node 0 totalpages: 258048
+[    0.000000]   DMA32 zone: 4096 pages used for memmap
+[    0.000000]   DMA32 zone: 0 pages reserved
+[    0.000000]   DMA32 zone: 258048 pages, LIFO batch:63
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 24 pages/cpu s60632 r8192 d29480 u98304
+[    0.000000] pcpu-alloc: s60632 r8192 d29480 u98304 alloc=24*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
+[    0.000000] ARM_SMCCC_ARCH_WORKAROUND_1 missing from firmware
+[    0.000000] CPU features: detected: Spectre-BHB
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 253952
+[    0.000000] Kernel command line: console=ttyMSM0 root=/dev/ram0
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 913484K/1032192K available (7294K kernel code, 624K rwdata, 2440K rodata, 88832K init, 389K bss, 118708K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv2m: range[mem 0x0b00c000-0x0b00cffc], SPI[640:671]
+[    0.000000] GICv2m: range[mem 0x0b00d000-0x0b00dffc], SPI[672:703]
+[    0.000000] GICv2m: range[mem 0x0b00e000-0x0b00effc], SPI[704:735]
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 24.00MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000004] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000309] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=96000)
+[    0.000319] pid_max: default: 32768 minimum: 301
+[    0.000412] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.000423] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.001374] ASID allocator initialised with 65536 entries
+[    0.001437] rcu: Hierarchical SRCU implementation.
+[    0.002777] MSM Memory Dump base table set up
+[    0.002795] MSM Memory Dump apps data table set up
+[    0.002945] smp: Bringing up secondary CPUs ...
+[    0.004408] Detected VIPT I-cache on CPU1
+[    0.004452] CPU1: Booted secondary processor 0x0000000001 [0x411fd090]
+[    0.006025] Detected VIPT I-cache on CPU2
+[    0.006066] CPU2: Booted secondary processor 0x0000000002 [0x411fd090]
+[    0.007620] Detected VIPT I-cache on CPU3
+[    0.007660] CPU3: Booted secondary processor 0x0000000003 [0x411fd090]
+[    0.007751] smp: Brought up 1 node, 4 CPUs
+[    0.007768] SMP: Total of 4 processors activated.
+[    0.007774] CPU features: detected: 32-bit EL0 Support
+[    0.007780] CPU features: detected: CRC32 instructions
+[    0.007816] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.007822] CPU: All CPU(s) started at EL1
+[    0.007974] alternatives: patching kernel code
+[    0.008584] devtmpfs: initialized
+[    0.017488] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.017504] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.017585] pinctrl core: initialized pinctrl subsystem
+[    0.018327] NET: Registered protocol family 16
+[    0.018625] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.018930] cpuidle: using governor ladder
+[    0.018948] cpuidle: using governor menu
+[    0.019044] NET: Registered protocol family 42
+[    0.019135] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.020020] ramoops: uncorrectable error in header
+[    0.020068] ramoops: uncorrectable error in header
+[    0.020119] ramoops: uncorrectable error in header
+[    0.020212] ramoops: uncorrectable error in header
+[    0.020236] pstore: Registered ramoops as persistent store backend
+[    0.020242] ramoops: using 0x40000@0x41000000, ecc: 16
+[    0.029080] qcom,gcc-ipq9574 1800000.gcc: Registered ipq9574 GCC clock provider
+[    0.037824] qcom,cpr4-apss-regulator b018000.cpr4-ctrl: CPR valid fuse count: 4
+[    0.038014] qcom,cpr3-npu-regulator a4000.npu-cpr: NPU CPR valid fuse count: 2
+[    0.039461] msm_sps_probe: sps:sps is ready
+[    0.059999] qcom,nsscc-ipq9574 39b00000.nsscc: Registered NSS CC clocks
+[    0.061009] pps_core: LinuxPPS API ver. 1 registered
+[    0.061016] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.061031] PTP clock support registered
+[    0.062748] s1: supplied by regulator-dummy
+[    0.062965] Advanced Linux Sound Architecture Driver Initialized.
+[    0.063001] workqueue: max_active 576 requested for napi_workq is out of range, clamping between 1 and 512
+[    0.063475] s2: supplied by regulator-dummy
+[    0.063689] clocksource: Switched to clocksource arch_sys_counter
+[    0.064182] s4: supplied by regulator-dummy
+[    0.064715] thermal_sys: Registered thermal governor 'step_wise'
+[    0.064719] thermal_sys: Registered thermal governor 'user_space'
+[    0.066092] NET: Registered protocol family 2
+[    0.066210] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.066948] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.066973] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.067028] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    0.067127] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.067188] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.067215] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.067337] NET: Registered protocol family 1
+[    0.067358] PCI: CLS 0 bytes, default 64
+[    0.322454] hw perfevents: enabled with armv8_cortex_a73 PMU driver, 7 counters available
+[    0.323361] workingset: timestamp_bits=46 max_order=18 bucket_order=0
+[    0.326923] zbud: loaded
+[    0.327932] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.327939] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.341107] Key type asymmetric registered
+[    0.341114] Asymmetric key parser 'x509' registered
+[    0.343517] qcom-qmp-phy 7d000.ssphy: 7d000.ssphy supply vdda-phy not found, using dummy regulator
+[    0.343563] qcom-qmp-phy 7d000.ssphy: 7d000.ssphy supply vdda-pll not found, using dummy regulator
+[    0.343879] qcom-qmp-phy 7d000.ssphy: Registered Qcom-QMP phy
+[    0.344199] qcom-qmp-phy fc000.phy: Registered Qcom-QMP phy
+[    0.344501] qcom-qmp-phy 8c000.phy: Registered Qcom-QMP phy
+[    0.344800] qcom-qmp-phy f4000.phy: Registered Qcom-QMP phy
+[    0.346253] bam-dma-engine 704000.dma: num-channels unspecified in dt
+[    0.346262] bam-dma-engine 704000.dma: num-ees unspecified in dt
+[    0.346913] bam-dma-engine 7884000.dma: qcom,controlled-remotely unspecified
+[    0.348121] global timer is null
+[    0.348258] CPU: IPQ9570, SoC Version: 1.1
+[    0.348264] OEM_ID: 0, PROD_ID: 0
+[    0.348538] msm_rpm_log_probe: OK
+[    0.352541] TZ SMMU State: SMMU Stage2 Enabled
+[    0.352622] TZ Log : Will warn on Access Violation, as paniconaccessviolation is not set
+[    0.353978] 78000.qcom,msm-eud: ttyEUD0 at MMIO 0x0 (irq = 81, base_baud = 0) is a EUD UART
+[    0.354367] License Manager driver registered
+[    0.354593] UBI cores power collapsed successfully
+[    0.355003] msm_serial 78b1000.serial: msm_serial: detected port #0
+[    0.355024] msm_serial 78b1000.serial: uartclk = 1824768
+[    0.355051] 78b1000.serial: ttyMSM0 at MMIO 0x78b1000 (irq = 14, base_baud = 114048) is a MSM
+[    0.355063] msm_serial: console setup on port #0
+[    1.085168] printk: console [ttyMSM0] enabled
+[    1.090064] msm_serial 78b2000.serial: msm_serial: detected port #1
+[    1.094120] msm_serial 78b2000.serial: uartclk = 24000000
+[    1.100199] 78b2000.serial: ttyMSM1 at MMIO 0x78b2000 (irq = 15, base_baud = 1500000) is a MSM
+[    1.105927] msm_serial: driver initialized
+[    1.114483] random: crng init done
+[    1.122948] brd: module loaded
+[    1.125325] loop: module loaded
+[    1.126362] spi_qup 78b5000.spi: IN:block:16, fifo:64, OUT:block:16, fifo:64
+[    1.128344] spi-nor spi0.0: unrecognized JEDEC id bytes: 00 00 00 00 00 00
+[    1.159694] qca-mdio 90000.mdio: CMN clock reset done
+[    1.159728] qca-mdio 90000.mdio: Reset PHY by GPIO 507
+[    1.379882] qca-mdio 90000.mdio: programe EPHY reg 0xc90f018 with 0x320c41
+[    1.380169] qca-mdio 90000.mdio: programe UNIPHY reg 0xc90f014 with 0x1cc5
+[    1.575900] qca-mdio 90000.mdio: qca-mdio driver was registered
+[    1.576096] i2c /dev entries driver
+[    1.586384] qti_scm_restart_reason qti,scm_restart_reason: reset_reason : Power on Reset [0x20]
+[    1.589379] sdhci: Secure Digital Host Controller Interface driver
+[    1.593884] sdhci: Copyright(c) Pierre Ossman
+[    1.600127] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.604950] sdhci_msm 7804000.sdhci: sdhci_msm_get_ice_device_vops: ICE device is not enabled
+[    1.639732] mmc0: SDHCI controller on 7804000.sdhci [7804000.sdhci] using ADMA 64-bit
+[    1.644740] 
+[    1.644740] Version Rollback Feature Disabled
+[    1.650206] qcom-q6v5-wcss-pil cd00000.remoteproc: unable to acquire memory-region
+[    1.652339] remoteproc remoteproc0: releasing cd00000.remoteproc
+[    1.659857] qcom-q6v5-wcss-pil: probe of cd00000.remoteproc failed with error -22
+[    1.666774] coresight-tmc 6047000.etf: invalid cti data
+[    1.674027] coresight-tmc 6048000.tmc: unable to acquire Q6 ETR memory-region
+[    1.680231] coresight coresight-etm0: CPU0: ETM v4.0 initialized
+[    1.685884] coresight-etm4x 6293000.etm: CPU0: (null) initialized
+[    1.692026] coresight coresight-etm1: CPU1: ETM v4.0 initialized
+[    1.697752] coresight-etm4x 6297000.etm: CPU1: (null) initialized
+[    1.704101] coresight coresight-etm2: CPU2: ETM v4.0 initialized
+[    1.709834] coresight-etm4x 629b000.etm: CPU2: (null) initialized
+[    1.716140] coresight coresight-etm3: CPU3: ETM v4.0 initialized
+[    1.721908] coresight-etm4x 629f000.etm: CPU3: (null) initialized
+[    1.728253] coresight-stm 6002000.stm: coresight-stm : stm_register_device failed, probing deferred
+[    1.734056] OF: graph: no port node found in /soc/cti@6291000
+[    1.742952] OF: graph: no port node found in /soc/cti@6295000
+[    1.748895] OF: graph: no port node found in /soc/cti@6299000
+[    1.754585] OF: graph: no port node found in /soc/cti@629d000
+[    1.760498] OF: graph: no port node found in /soc/csr@6001000
+[    1.765969] coresight-csr 6001000.csr: CSR initialized: coresight-csr
+[    1.773198] NET: Registered protocol family 10
+[    1.778751] Segment Routing with IPv6
+[    1.782441] NET: Registered protocol family 17
+[    1.786158] Bridge firewalling registered
+[    1.790510] 8021q: 802.1Q VLAN Support v1.8
+[    1.794802] Key type ._fscrypt registered
+[    1.798571] Key type .fscrypt registered
+[    1.803078] pstore: Using crash dump compression: deflate
+[    1.809381] mmc0: new HS400 Enhanced strobe MMC card at address 0001
+[    1.812401] mmcblk0: mmc0:0001 4FTE4R 3.64 GiB 
+[    1.818643] mmcblk0boot0: mmc0:0001 4FTE4R partition 1 4.00 MiB
+[    1.822890] mmcblk0boot1: mmc0:0001 4FTE4R partition 2 4.00 MiB
+[    1.825703] qcom,cpr4-apss-regulator b018000.cpr4-ctrl: CPR valid fuse count: 4
+[    1.828701] mmcblk0rpmb: mmc0:0001 4FTE4R partition 3 512 KiB, chardev (239:0)
+[    1.834602] cpr4_ipq807x_apss_read_fuse_data: apc_corner: speed bin = 0
+[    1.842590] Alternate GPT is invalid, using primary GPT.
+[    1.849046] cpr4_ipq807x_apss_read_fuse_data: apc_corner: CPR fusing revision = 2
+[    1.849051] cpr4_ipq807x_apss_read_fuse_data: apc_corner: CPR misc fuse value = 0
+[    1.849083] cpr4_ipq807x_apss_read_fuse_data: apc_corner: Voltage boost fuse config = 0 boost = disable
+[    1.855613] GPT: device [179:27] (rootfs) set to be root filesystem
+[    1.861160] cpr3_mem_acc_init: apc: not using memory accelerator regulator
+[    1.868498]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29
+[    1.875959] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused      SVS: open-loop= 635000 uV
+[    1.875965] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused      NOM: open-loop= 742500 uV
+[    1.919882] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused    TURBO: open-loop= 827500 uV
+[    1.929690] cpr4_ipq807x_apss_calculate_open_loop_voltages: apc_corner: fused   STURBO: open-loop=1012500 uV
+[    1.939528] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused      SVS: quot[13]= 635, quot_offset[13]=   0
+[    1.949317] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused      NOM: quot[13]= 852, quot_offset[13]= 215
+[    1.960163] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused    TURBO: quot[13]=1008, quot_offset[13]= 155
+[    1.971099] cpr4_ipq807x_apss_calculate_target_quotients: apc_corner: fused   STURBO: quot[13]=1319, quot_offset[13]= 310
+[    1.982227] cpr3_regulator_init_ctrl: apc: Default CPR mode = closed-loop
+[    1.982741] qcom,cpr3-npu-regulator a4000.npu-cpr: NPU CPR valid fuse count: 2
+[    1.999858] cpr3_mem_acc_init: npu: not using memory accelerator regulator
+[    2.006863] npu_corner: fused      NOM: open-loop= 772500 uV
+[    2.013715] npu_corner: fused    TURBO: open-loop= 807500 uV
+[    2.020108] core: _opp_supported_by_regulators: OPP minuV: 0 maxuV: 0, not supported by regulator
+[    2.025188] cpu cpu0: _opp_add: OPP not supported by regulators (0)
+[    2.034251] cpufreq: cpufreq_online: CPU0: Running at unlisted freq: 24000 KHz
+[    2.041209] cpufreq: cpufreq_online: CPU0: Unlisted initial frequency changed to: 936000 KHz
+[    2.048559] coresight-tmc 6048000.tmc: unable to acquire Q6 ETR memory-region
+[    2.055905] coresight-tmc 6048000.tmc: invalid cti data
+[    2.062966] sps_register_bam_device: sps:BAM 0x0000000006064000 is registered
+[    2.068225] coresight coresight-stm: STM32 initialized
+[    2.075354] hctosys: unable to open rtc device (rtc0)
+[    2.080603] ALSA device list:
+[    2.085412]   No soundcards found.
+[    2.107340] Freeing unused kernel memory: 88832K
+[    2.107374] Run /init as init process
+[    2.402413] init: Console is alive
+[    2.402572] init: - watchdog -
+[    2.409983] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    2.411873] usbcore: registered new interface driver usbfs
+[    2.415747] usbcore: registered new interface driver hub
+[    2.421143] usbcore: registered new device driver usb
+[    2.428701] SCSI subsystem initialized
+[    2.434356] usbcore: registered new interface driver usb-storage
+[    2.435228] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    2.445779] init: - preinit -
+[    2.479973] procd: - early -
+[    2.479997] procd: - watchdog -
+[    2.990599] procd: - watchdog -
+[    2.990796] procd: - ubus -
+[    3.043388] procd: - init -
+[    3.093610] urngd: v1.0.2 started.
+[    3.126425] kmodloader: loading kernel modules from /etc/modules.d/*
+[    3.127841] NET: Registered protocol family 38
+[    3.133459] PPP generic driver version 2.4.2
+[    3.136543] NET: Registered protocol family 24
+[    3.141563] qca_nss_sfe: Unknown symbol ppe_rfs_ipv6_rule_create (err -2)
+[    3.145056] qca_nss_sfe: Unknown symbol ppe_rfs_ipv4_rule_create (err -2)
+[    3.151648] qca_nss_sfe: Unknown symbol ppe_rfs_ipv4_rule_destroy (err -2)
+[    3.158478] qca_nss_sfe: Unknown symbol ppe_rfs_ipv6_rule_destroy (err -2)
+[    3.184818] inspect: module license 'Proprietary' taints kernel.
+[    3.184831] Disabling lock debugging due to kernel taint
+[    3.189906] inspect: Unknown symbol fal_port_shaper_set (err -2)
+[    3.195174] inspect: Unknown symbol fal_fdb_entry_getnext_byindex (err -2)
+[    3.201162] inspect: Unknown symbol fal_port_policer_entry_set (err -2)
+[    3.207849] inspect: Unknown symbol appe_port_rx_cnt_tbl_rx_byte_cnt_get (err -2)
+[    3.214358] inspect: Unknown symbol fal_fdb_entry_getfirst (err -2)
+[    3.221999] inspect: Unknown symbol hppe_port_tx_counter_tbl_reg_tx_bytes_get (err -2)
+[    3.244125] NET: Registered protocol family 15
+[    3.244508] Initializing XFRM netlink socket
+[    3.247965] nat46: module (version 362640b41ae52b732d9e9729e61ac555492442a3) loaded.
+[    3.261026] ssdk_dt_parse_interrupt[810]:INFO:intr-gpio does not exist
+[    3.261377] ssdk_dt_parse_led[1120]:INFO:current dts led_source_num is 12
+[    3.266467] ^^ B dev_id0->miibus=ffffff80376e8800
+[    3.274901] ssdk_phy_driver_init[370]:INFO:dev_id = 0, phy_adress = 6, phy_id = 0x1a241cc7 phytype doesn't match
+[    3.278006] sfp_phy_init[403]:INFO:qca probe sfp phy driver succeeded!
+[    3.297133] qca808x_phy_api_ops_init[2739]:INFO:qca probe qca808x phy driver succeeded!
+[    3.301751] qca808x_ptp_register[1331]:INFO:qca808x phydev 90000.mdio:01 ptp clock registered
+[    3.303992] qca808x_ptp_register[1331]:INFO:qca808x phydev 90000.mdio:02 ptp clock registered
+[    3.312666] qca808x_ptp_register[1331]:INFO:qca808x phydev 90000.mdio:03 ptp clock registered
+[    3.321172] qca808x_ptp_register[1331]:INFO:qca808x phydev 90000.mdio:04 ptp clock registered
+[    3.545574] qca_appe_tdm_hw_init[302]:INFO:appe scheduler tdm mode =1
+[    3.545593] qca_appe_tdm_hw_init[344]:INFO:appe tdm setup num=100
+[    3.793931] qca8084_phy_interface_set_mode[312]:INFO:configure manhattan phy as PORT_UQXGMII
+[    3.860025] ssdk_mht_gcc_clock_init[1345]:INFO:MHT GCC CLK initialization with clock mode 47 on port bmp 0x1e
+[    3.860923] mht_pinctrl_clk_gate_set[329]:INFO:[mht_pinctrl_clk_gate_set] gate_en:1
+[    3.861398] mht_pinctrl_rev_check[347]:INFO:[mht_pinctrl_rev_check] version_id:0x0 mfg_id:0x70 start_bit:0x1
+[    3.868897] mht_pinctrl_rev_check[350]:INFO: Pinctrl Version Check Pass
+[    3.889453] ssdk_mht_pinctrl_init[397]:INFO: ssdk_mht_pinctrl_init done
+[    4.117697] qca_hppe_interface_mode_init[1477]:INFO:appe interface mode initialization
+[    4.756412] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.757217] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.762311] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.768257] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.774341] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.780317] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.786266] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.792254] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.798206] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.804243] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.810205] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.816223] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.822195] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.828184] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.834168] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.840122] ssdk: 4671/4730: ignore autoneg mismatch: 3b62cc80/0
+[    4.845533] qca_appe_portctrl_hw_init[407]:INFO:appe portctrl initialization
+[    4.853578] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:bc4, ssdk_led_src_id:0
+[    4.858960] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:bc4, ssdk_led_src_id:3
+[    4.867184] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:bc4, ssdk_led_src_id:6
+[    4.875400] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:bc4, ssdk_led_src_id:9
+[    4.883647] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:3e4, ssdk_led_src_id:1
+[    4.891268] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:3cc, ssdk_led_src_id:2
+[    4.899372] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:3e4, ssdk_led_src_id:4
+[    4.907538] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:3cc, ssdk_led_src_id:5
+[    4.915672] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:3e4, ssdk_led_src_id:7
+[    4.923818] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:3cc, ssdk_led_src_id:8
+[    4.931921] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:3e4, ssdk_led_src_id:a
+[    4.940178] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:3cc, ssdk_led_src_id:b
+[    4.948237] qca_appe_rss_hash_hw_init[595]:INFO:appe rss hash initialization: hash_seed 0xce6c8451
+[    4.955222] regi_init[3939]:INFO:Initializing APPE Done!!
+[    4.964034] regi_init[4007]:INFO:qca-ssdk module init succeeded!
+[    4.970431] tun: Universal TUN/TAP device driver, 1.6
+[    4.975822] gre: GRE over IPv4 demultiplexor driver
+[    4.980851] PPTP driver version 0.8.5
+[    5.040650] xt_ndpi v1.2 ndpi 4.9.0-5229-d6968fd IPv6=YES debug_message=no
+[    5.040650]  BT: hash_size 0k, hash_expiation 0 sec, log_size 128kb
+[    5.040650]  sizeof hash_ip4p_node=44 flow_struct=1120 packet_struct=1336
+[    5.040650]    flow_tcp_struct=108 flow_udp_struct=112 int_one_line_struct=16
+[    5.040650]  ndpi_ip_addr_t=16 ndpi_protocol=6 nf_ct_ext_ndpi=240
+[    5.040650]  flow_info=112 spinlock_t=4  NF_EXT_ID 7
+[    5.055428] xt_ndpi: MAX_PROTOCOLS 512 LAST_PROTOCOL 418
+[    5.077651] xt_ndpi: flow accounting ON
+[    5.096544] dp1: ppe offload disabled: 1 for macid 1
+[    5.096557] dp1: Switch attached to macid 1 status: 0
+[    5.100599] (unnamed net_device) (uninitialized): netif_napi_add() called with weight 512
+[    5.105892] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x1
+[    5.115639] dp2: ppe offload disabled: 1 for macid 2
+[    5.120471] dp2: Switch attached to macid 2 status: 0
+[    5.125510] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x2
+[    5.132331] dp3: ppe offload disabled: 1 for macid 3
+[    5.137122] dp3: Switch attached to macid 3 status: 0
+[    5.142142] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x3
+[    5.148928] dp4: ppe offload disabled: 1 for macid 4
+[    5.153790] dp4: Switch attached to macid 4 status: 0
+[    5.158804] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x4
+[    5.165633] dp5: ppe offload disabled: 0 for macid 5
+[    5.170476] dp5: Switch attached to macid 5 status: 0
+[    5.175477] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x5
+[    5.180818] dp6: ppe offload disabled: 0 for macid 6
+[    5.187125] dp6: Switch attached to macid 6 status: 0
+[    5.192134] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x6
+[    5.197474] **********************************************************
+[    5.203779] * NSS Data Plane driver
+[    5.210109] **********************************************************
+[    5.216780] l2tp_core: L2TP core driver, V2.0
+[    5.220530] l2tp_netlink: L2TP netlink interface
+[    5.225637] wireguard: WireGuard 1.0.20220627 loaded. See www.wireguard.com for information.
+[    5.229221] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    5.239057] ip_gre: GRE over IPv4 tunneling driver
+[    5.248192] ip6_gre: GRE over IPv6 tunneling driver
+[    5.253174] Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+[    5.297633] nss_ppe_lag_register_event[418]:ffffff803c8b2000: Bond interface (bond0) is created=0
+[    5.297651] nss_ppe_lag_init[614]:LAG Manager Installed
+[    5.308637] PPE-RULE module loaded successfully
+[    5.312523] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    5.317363] GACT probability on
+[    5.320224] Mirror/redirect action on
+[    5.325043] u32 classifier
+[    5.326727]     input device check on
+[    5.329345]     Actions configured
+[    5.337047] qcom-qusb2-phy 7b000.qusb: 7b000.qusb supply vdda-pll not found, using dummy regulator
+[    5.337091] qcom-qusb2-phy 7b000.qusb: 7b000.qusb supply vdda-phy-dpdm not found, using dummy regulator
+[    5.345457] qcom-qusb2-phy 7b000.qusb: Registered Qcom-QUSB2 phy
+[    5.355412] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    5.360873] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[    5.367004] xhci-hcd xhci-hcd.0.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x0000000000010010
+[    5.373745] xhci-hcd xhci-hcd.0.auto: irq 88, io mem 0x08a00000
+[    5.383382] hub 1-0:1.0: USB hub found
+[    5.388996] hub 1-0:1.0: 1 port detected
+[    5.393030] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    5.396882] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[    5.402186] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.0 SuperSpeed
+[    5.409746] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    5.416537] hub 2-0:1.0: USB hub found
+[    5.424621] hub 2-0:1.0: 1 port detected
+[    5.441447] IPsec XFRM device driver
+[    5.448091] xt_time: kernel timezone is -0000
+[    5.451636] kmodloader: done loading kernel modules from /etc/modules.d/*
+[    6.652988] /dev/loop0: recovering journal
+[    6.692180] /dev/loop0: clean, 21/8192 files, 5963/32768 blocks
+[    6.692184] 
+[    6.805452] /dev/loop2: recovering journal
+[    6.856345] /dev/loop2: clean, 22/214272 files, 567192/856064 blocks
+[    6.856349] 
+[    6.880183] /cfg mount time:
+[    6.908755] EXT4-fs (loop0): mounted filesystem with ordered data mode. Opts: (null)
+[    6.908777] ext4 filesystem being mounted at /cfg supports timestamps until 2038 (0x7fffffff)
+[    6.915693] real	0m 0.03s
+[    6.923970] user	0m 0.00s
+[    6.923970] sys	0m 0.00s
+[    7.005099] EXT4-fs (loop2): mounted filesystem with ordered data mode. Opts: (null)
+[    7.091689] Adding 2097148k swap on /a/swap.  Priority:-2 extents:7 across:2326524k SS
+[    7.234654] poe_util
+[   10.759872] Load PoE fw to chip success!
+[   10.759971] real	0m 3.52s
+[   10.759980] user	0m 1.09s
+[   10.759980] sys	0m 0.19s
+[   10.768128] PoE fw version : 0.0
+[   10.776259] Write total power
+[   10.776284] Total power       :    40.000 W
+[   10.776284] Power budget      :    40.000 W
+[   10.776284] Deliver power     :     0.000 W
+[   10.824693] ECM init
+[   10.824723] ECM database jhash random seed: 0xecf0cf9a
+[   10.825353] ECM init complete
+[   10.856706] edma_cfg_rx_rps[1591]:EDMA RPS configured to use 3 cores
+[   10.916100] lp5562 0-0030: internal clock used
+[   12.359085] br-lan: port 1(eth0) entered blocking state
+[   12.359091] br-lan: port 1(eth0) entered disabled state
+[   12.359189] nss_ppe_lag_update_slave[131]:ffffff803be0bb48: Upper dev is not LAG for dev: eth0
+[   12.359213] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x1
+[   12.359293] device eth0 entered promiscuous mode
+[   12.359793] Set globle Ageing time set to 300 which is same for all bridge
+[   12.362174] br-lan: port 2(eth1) entered blocking state
+[   12.362186] br-lan: port 2(eth1) entered disabled state
+[   12.362304] nss_ppe_lag_update_slave[131]:ffffff803be0bb48: Upper dev is not LAG for dev: eth1
+[   12.362332] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x2
+[   12.362418] device eth1 entered promiscuous mode
+[   12.362485] Set globle Ageing time set to 300 which is same for all bridge
+[   12.364313] br-lan: port 3(eth2) entered blocking state
+[   12.364327] br-lan: port 3(eth2) entered disabled state
+[   12.364979] nss_ppe_lag_update_slave[131]:ffffff803be0bb48: Upper dev is not LAG for dev: eth2
+[   12.365013] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x3
+[   12.365165] device eth2 entered promiscuous mode
+[   12.365253] Set globle Ageing time set to 300 which is same for all bridge
+[   12.366501] br-lan: port 4(eth5) entered blocking state
+[   12.366513] br-lan: port 4(eth5) entered disabled state
+[   12.368053] nss_ppe_lag_update_slave[131]:ffffff803be0bb48: Upper dev is not LAG for dev: eth5
+[   12.368086] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x6
+[   12.368813] device eth5 entered promiscuous mode
+[   12.368963] Set globle Ageing time set to 300 which is same for all bridge
+[   14.584695] nss-dp 3a50c000.dp4 eth3: PHY Link up speed: 1000
+[   14.587911] IPv6: ADDRCONF(NETDEV_CHANGE): eth3: link becomes ready

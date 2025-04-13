@@ -1,0 +1,2907 @@
+============ start debug info ============
+libhd version 21.71 (aarch64) [7688]
+using /var/lib/hardware
+kernel version is 5.4
+----- /proc/cmdline -----
+  console=ttyMSM0 root=/dev/ram0
+----- /proc/cmdline end -----
+debug = 0xff7ffff7
+probe = 0x15938fcda8107cf9fffe (+memory +pci +isapnp +net +floppy +misc +misc.serial +misc.par +misc.floppy +serial +cpu +bios +monitor +mouse +scsi +usb -usb.mods +modem +modem.usb +parallel +parallel.lp +parallel.zip -isa -isa.isdn +isdn +kbd +prom +sbus +int -braille -braille.alva -braille.fhp -braille.ht -ignx11 +sys -bios.vbe -isapnp.old -isapnp.new -isapnp.mod -braille.baum -manual +fb +pppoe -scan +pcmcia +fork -parallel.imm +s390 +cpuemu -sysfs -s390disks +udev +block +block.cdrom +block.part +edd +edd.mod -bios.ddc -bios.fb -bios.mode +input +block.mods +bios.vesa -cpuemu.debug -scsi.noserial +wlan -bios.crc -hal +bios.vram +bios.acpi -bios.ddc.ports=0 +modules.pata -net.eeprom +x86emu=dump -max -lxrc)
+shm: attached segment 2 at 0x7fbafa5000
+>> hal.1: read hal data
+>> floppy.1: get nvram
+>> floppy.2: klog info
+>> sys.1: cpu
+>> misc.9: kernel log
+>> misc.1: misc data
+>> misc.1.1: open serial
+>> misc.1.2: open parallel
+>> misc.2.1: io
+>> misc.2.2: dma
+>> misc.2.3: irq
+----- /proc/ioports -----
+----- /proc/ioports end -----
+----- /proc/interrupts -----
+    4:     228293      23039      25819      29504     GIC-0  20 Level     arch_timer
+    6:          0          0          0          0     GIC-0  39 Level     arch_mem_timer
+    8:          0          0          0          0     GIC-0  23 Level     arm-pmu
+    9:          0          0          0          0     GIC-0 276 Edge      tzerror
+   10:          0          0          0          0     GIC-0 239 Level     bam_dma
+   11:          0          0          0          0     GIC-0  35 Edge      wdt_bark
+   13:          0          0          0          0     GIC-0 270 Level     bam_dma
+   14:        611          0          0          0     GIC-0 338 Level     msm_serial0
+   15:        559          0          0          0     GIC-0 339 Level     msm_serial1
+   16:       7134          0          0          0     GIC-0 128 Level     i2c_qup
+   17:          0          0          0          0     GIC-0 331 Level     i2c_qup
+   18:          2          0          0          0     GIC-0 127 Level     78b5000.spi
+   19:          0          0          0          0     GIC-0 399 Level     edma_txcmpl_4
+   20:          0          0          0          0     GIC-0 400 Level     edma_txcmpl_5
+   21:          0          0          0          0     GIC-0 401 Level     edma_txcmpl_6
+   22:          0          0          0          0     GIC-0 402 Level     edma_txcmpl_7
+   23:          0          0          0          0     GIC-0 403 Level     edma_txcmpl_8
+   24:          0          0          0          0     GIC-0 404 Level     edma_txcmpl_9
+   25:          0          0          0          0     GIC-0 405 Level     edma_txcmpl_10
+   26:          0          0          0          0     GIC-0 406 Level     edma_txcmpl_11
+   27:          0          0          0          0     GIC-0 407 Level     edma_txcmpl_12
+   28:          0          0          0          0     GIC-0 408 Level     edma_txcmpl_13
+   29:          0          0          0          0     GIC-0 409 Level     edma_txcmpl_14
+   30:          0          0          0          0     GIC-0 410 Level     edma_txcmpl_15
+   31:          0          0          0          0     GIC-0 411 Level     edma_txcmpl_16
+   32:          0          0          0          0     GIC-0 412 Level     edma_txcmpl_17
+   33:          0          0          0          0     GIC-0 413 Level     edma_txcmpl_18
+   34:          0          0          0          0     GIC-0 414 Level     edma_txcmpl_19
+   35:        241          0          0          0     GIC-0 415 Level     edma_txcmpl_20
+   36:          0        269          0          0     GIC-0 416 Level     edma_txcmpl_21
+   37:          0          0        911          0     GIC-0 541 Level     edma_txcmpl_22
+   38:          0          0          0       1102     GIC-0 540 Level     edma_txcmpl_23
+   39:          0          0          0          0     GIC-0 539 Level     edma_txcmpl_24
+   40:          0          0          0          0     GIC-0 538 Level     edma_txcmpl_25
+   41:          0          0          0          0     GIC-0 537 Level     edma_txcmpl_26
+   42:          0          0          0          0     GIC-0 536 Level     edma_txcmpl_27
+   43:          0          0          0          0     GIC-0 535 Level     edma_txcmpl_28
+   44:          0          0          0          0     GIC-0 534 Level     edma_txcmpl_29
+   45:          0          0          0          0     GIC-0 533 Level     edma_txcmpl_30
+   46:          0          0          0          0     GIC-0 532 Level     edma_txcmpl_31
+   47:       1970          0          0          0     GIC-0 383 Level     edma_rxdesc_20
+   48:          0        619          0          0     GIC-0 384 Level     edma_rxdesc_21
+   49:          0          0       3695          0     GIC-0 385 Level     edma_rxdesc_22
+   50:          0          0          0          0     GIC-0 386 Level     edma_rxdesc_23
+   51:          0          0          0          0     GIC-0 293 Level     edma_misc
+   61:       1423          0          0          0     GIC-0 155 Level     mmc0
+   62:          3          0          0          0     GIC-0 170 Level     7804000.sdhci
+   81:          0          0          0          0     GIC-0 501 Level     eud_irq
+   82:          0          0          0          0     GIC-0 198 Edge      tmc-etr
+   83:          0          0          0          0     GIC-0 216 Edge      tsens_interrupt
+   84:          9          0          0          0     GIC-0  47 Edge      cpr3
+   85:          0          0          0          0     GIC-0 354 Edge      smp2p
+   86:         36          0          0          0     GIC-0 200 Edge      glink-native
+   87:          0          0          0          0   msmgpio  33 Edge      soc:gpio_keys
+   88:          0          0          0          0     GIC-0 172 Level     xhci-hcd:usb1
+  IPI0:     15673      13498      39558      28602       Rescheduling interrupts
+  IPI1:       658        392        562        382       Function call interrupts
+  IPI2:         0          0          0          0       CPU stop interrupts
+  IPI3:         0          0          0          0       CPU stop (for crash dump) interrupts
+  IPI4:         0          0          0          0       Timer broadcast interrupts
+  IPI5:         0          0          0          0       IRQ work interrupts
+  IPI6:         0          0          0          0       CPU wake-up interrupts
+  Err:          0
+----- /proc/interrupts end -----
+----- /proc/dma -----
+----- /proc/dma end -----
+>> misc.3: FPU
+>> misc.3.1: DMA
+>> misc.3.2: PIC
+>> misc.3.3: timer
+>> misc.3.4: RTC
+>> cpu.1: cpuinfo
+----- /proc/cpuinfo -----
+  processor	: 0
+  BogoMIPS	: 48.00
+  Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+  CPU implementer	: 0x41
+  CPU architecture: 8
+  CPU variant	: 0x1
+  CPU part	: 0xd09
+  CPU revision	: 0
+  
+  processor	: 1
+  BogoMIPS	: 48.00
+  Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+  CPU implementer	: 0x41
+  CPU architecture: 8
+  CPU variant	: 0x1
+  CPU part	: 0xd09
+  CPU revision	: 0
+  
+  processor	: 2
+  BogoMIPS	: 48.00
+  Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+  CPU implementer	: 0x41
+  CPU architecture: 8
+  CPU variant	: 0x1
+  CPU part	: 0xd09
+  CPU revision	: 0
+  
+  processor	: 3
+  BogoMIPS	: 48.00
+  Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+  CPU implementer	: 0x41
+  CPU architecture: 8
+  CPU variant	: 0x1
+  CPU part	: 0xd09
+  CPU revision	: 0
+  
+----- /proc/cpuinfo end -----
+>> memory.1: main memory size
+  kcore mem:  0x0
+  klog mem 0: 0x0
+  klog mem 1: 0x0
+  klog mem:   0x0
+  bios mem:   0x0
+  meminfo:    0x3d2d3000
+  xen balloon:    0x0
+>> pci.1: sysfs drivers
+----- sysfs driver list (id 0xd7ebc94512116a9e) -----
+    qcom_smd_rpm: /devices/platform/rpm-glink/rpm-glink.rpm_requests.-1.-1
+   coresight-stm: /devices/platform/soc/6002000.stm
+   coresight-cti: /devices/platform/soc/6291000.cti
+   coresight-cti: /devices/platform/soc/629d000.cti
+   coresight-cti: /devices/platform/soc/6295000.cti
+   coresight-cti: /devices/platform/soc/6299000.cti
+coresight-dynamic-replicator: /devices/platform/soc/6046000.replicator
+coresight-dynamic-funnel: /devices/platform/soc/62a1000.funnel
+coresight-dynamic-funnel: /devices/platform/soc/6041000.funnel
+coresight-dynamic-funnel: /devices/platform/soc/6042000.funnel
+coresight-dynamic-funnel: /devices/platform/soc/6045000.funnel
+ coresight-etm4x: /devices/platform/soc/629b000.etm
+ coresight-etm4x: /devices/platform/soc/6293000.etm
+ coresight-etm4x: /devices/platform/soc/629f000.etm
+ coresight-etm4x: /devices/platform/soc/6297000.etm
+   coresight-tmc: /devices/platform/soc/6048000.tmc
+   coresight-tmc: /devices/platform/soc/6047000.etf
+        qcom_scm: /devices/platform/soc/soc:scm
+       leds-gpio: module = leds_gpio
+       leds-gpio: /devices/platform/soc/soc:leds
+         nss-ppe: /devices/platform/soc/soc:nss-ppe
+         nss-ppe: module = qca_nss_ppe
+       reg-dummy: /devices/platform/reg-dummy
+        qca-mdio: /devices/platform/soc/90000.mdio
+         msm-dcc: /devices/platform/soc/797f000.dcc_v2
+       qcom-smem: /devices/platform/smem
+         i2c_qup: /devices/platform/soc/78b6000.i2c
+         i2c_qup: /devices/platform/soc/78b9000.i2c
+    qcom-socinfo: /devices/platform/smem/qcom-socinfo
+  qcom_glink_rpm: /devices/platform/rpm-glink
+ qcom_hwspinlock: /devices/platform/hwlock
+         msm-eud: /devices/platform/soc/78000.qcom,msm-eud
+       qti_tzlog: /devices/platform/qti,tzlog
+         msm_sps: /devices/platform/qti,sps
+    qcom,msm-apm: /devices/platform/soc/b111000.apm
+qcom-ipq-apss-pll: /devices/platform/soc/b116000.clock
+         msm_rng: /devices/platform/soc/e3000.prng
+qcom,nsscc-ipq9574: /devices/platform/soc/39b00000.nsscc
+   snd-soc-dummy: /devices/platform/snd-soc-dummy
+        qcom_wdt: /devices/platform/soc/b017000.watchdog
+reg-fixed-voltage: /devices/platform/soc/soc:dummy-regulator@1
+reg-fixed-voltage: /devices/platform/soc/soc:dummy-regulator@0
+         spi_qup: /devices/platform/soc/78b5000.spi
+       dwc3-qcom: /devices/platform/soc/8af8800.usb3
+       dwc3-qcom: module = dwc3_qcom
+      reg_update: /devices/platform/soc/400000.reg_update
+      msm_serial: /devices/platform/soc/78b2000.serial
+      msm_serial: /devices/platform/soc/78b1000.serial
+qcom_rpm_smd_regulator: /devices/platform/rpm-glink/rpm-glink.rpm_requests.-1.-1/rpm-glink:glink-channel:regulators
+       gpio-keys: /devices/platform/soc/soc:gpio_keys
+       gpio-keys: module = gpio_button_hotplug
+qcom,cpr3-npu-regulator: /devices/platform/soc/a4000.npu-cpr
+     qcom,qfprom: /devices/platform/soc/a4000.qfprom
+     qcom_qfprom: /devices/platform/firmware:qfprom
+qti_scm_restart_reason: /devices/platform/qti,scm_restart_reason
+  qcom-qusb2-phy: /devices/platform/soc/7b000.qusb
+  qcom-qusb2-phy: module = phy_qcom_qusb2
+      qcom-tsens: /devices/platform/soc/4a9000.thermal-sensor
+   qcom_apcs_ipc: /devices/platform/soc/b111000.mailbox
+gpio-keys-polled: module = gpio_button_hotplug
+       armv8-pmu: /devices/platform/pmu
+qcom,cpr4-apss-regulator: /devices/platform/soc/b018000.cpr4-ctrl
+qcom,apss-ipq6018-clk: /devices/platform/soc/b111000.mailbox/qcom,apss-ipq6018-clk
+   coresight-csr: /devices/platform/soc/6001000.csr
+    qcom-qmp-phy: /devices/platform/soc/7d000.ssphy
+    qcom-qmp-phy: /devices/platform/soc/fc000.phy
+    qcom-qmp-phy: /devices/platform/soc/f4000.phy
+    qcom-qmp-phy: /devices/platform/soc/8c000.phy
+      qcom_smp2p: /devices/platform/wcss-smp2p
+ ipq9574-pinctrl: /devices/platform/soc/1000000.pinctrl
+  bam-dma-engine: /devices/platform/soc/704000.dma
+  bam-dma-engine: /devices/platform/soc/7884000.dma
+      cpufreq-dt: /devices/platform/cpufreq-dt
+       sdhci_msm: /devices/platform/soc/7804000.sdhci
+ license_manager: /devices/platform/soc/soc:license_manager
+qti_ctx_save_driver: /devices/platform/ctx-save
+          nss-dp: /devices/platform/soc/3a500000.dp1
+          nss-dp: /devices/platform/soc/3a514000.dp6
+          nss-dp: /devices/platform/soc/3a508000.dp3
+          nss-dp: /devices/platform/soc/3a510000.dp5
+          nss-dp: /devices/platform/soc/3a50c000.dp4
+          nss-dp: /devices/platform/soc/3a504000.dp2
+          nss-dp: module = qca_nss_dp
+         ramoops: /devices/platform/41000000.ramoops
+        xhci-hcd: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto
+        xhci-hcd: module = xhci_plat_hcd
+            dwc3: /devices/platform/soc/8af8800.usb3/8a00000.dwc3
+            dwc3: module = dwc3
+        ess_ssdk: /devices/platform/soc/soc:ess-instance/soc:ess-instance:ess-switch@3a000000
+        ess_ssdk: /devices/platform/soc/soc:ess-instance
+        ess_ssdk: module = qca_ssdk
+     msm_rpm_log: /devices/platform/soc/29fc00.qti,rpm-log
+qcom-cpufreq-nvmem: /devices/platform/qcom-cpufreq-nvmem
+qcom,gcc-ipq9574: /devices/platform/soc/1800000.gcc
+        xhci_hcd: module = xhci_pci
+             mhi: module = mhi_qti
+            nvme: module = nvme
+          mmcblk: /devices/platform/soc/7804000.sdhci/mmc_host/mmc0/mmc0:0001
+              sd: module = sd_mod
+         QCA SFP: /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:1f
+         QCA SFP: /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:1e
+         QCA SFP: module = qca_ssdk
+QCA808X SSDK ethernet: /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:03
+QCA808X SSDK ethernet: /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:01
+QCA808X SSDK ethernet: /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:04
+QCA808X SSDK ethernet: /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:02
+QCA808X SSDK ethernet: module = qca_ssdk
+     usb-storage: module = usb_storage
+             usb: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb1
+             usb: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb2
+             usb: module = usbcore
+             hub: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb1/1-0:1.0
+             hub: module = usbcore
+             hub: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb2/2-0:1.0
+           usbfs: module = usbcore
+          lp5562: /devices/platform/soc/78b6000.i2c/i2c-0/0-0030
+----- sysfs driver list end -----
+>> pci.2: get sysfs pci data
+sysfs: no such bus: pci
+---------- PCI raw data ----------
+---------- PCI raw data end ----------
+>> pci.4: build list
+>> pci.3: macio
+sysfs: no such bus: macio
+>> pci.4: vio
+sysfs: no such bus: vio
+>> pci.5: xen
+sysfs: no such bus: xen
+>> pci.6: ps3
+sysfs: no such bus: ps3_system_bus
+>> pci.7: platform
+  platform device: name = 3a500000.dp1
+    path = /devices/platform/soc/3a500000.dp1
+    type = "dp1", modalias = "of:Ndp1TnetworkCqcom,nss-dp", driver = "nss-dp"
+    is net: interface = /sys/devices/platform/soc/3a500000.dp1/net/eth0
+  platform device: name = hwlock
+    path = /devices/platform/hwlock
+    type = "hwlock", modalias = "of:NhwlockT(null)Cqcom,tcsr-mutex", driver = "qcom_hwspinlock"
+  platform device: name = b111000.apm
+    path = /devices/platform/soc/b111000.apm
+    type = "apm", modalias = "of:NapmT(null)Cqcom,ipq807x-apm", driver = "qcom,msm-apm"
+  platform device: name = 78b5000.spi
+    path = /devices/platform/soc/78b5000.spi
+    type = "spi", modalias = "of:NspiT(null)Cqcom,spi-qup-v2.2.1", driver = "spi_qup"
+  platform device: name = 3a514000.dp6
+    path = /devices/platform/soc/3a514000.dp6
+    type = "dp6", modalias = "of:Ndp6TnetworkCqcom,nss-dp", driver = "nss-dp"
+    is net: interface = /sys/devices/platform/soc/3a514000.dp6/net/eth5
+  platform device: name = reg-dummy
+    path = /devices/platform/reg-dummy
+    type = "", modalias = "platform:reg-dummy", driver = "reg-dummy"
+  platform device: name = b116000.clock
+    path = /devices/platform/soc/b116000.clock
+    type = "clock", modalias = "of:NclockT(null)Cqcom,ipq9574-a73pll", driver = "qcom-ipq-apss-pll"
+  platform device: name = 7804000.sdhci
+    path = /devices/platform/soc/7804000.sdhci
+    type = "sdhci", modalias = "of:NsdhciT(null)Cqcom,sdhci-msm-v5", driver = "sdhci_msm"
+  platform device: name = pmu-v7
+    path = /devices/platform/pmu-v7
+    type = "pmu-v7", modalias = "of:Npmu-v7T(null)Carm,cortex-a7-pmu", driver = ""
+  platform device: name = xhci-hcd.0.auto
+    path = /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto
+    type = "", modalias = "platform:xhci-hcd", driver = "xhci-hcd"
+    is usb
+    is xhci
+  platform device: name = 78b2000.serial
+    path = /devices/platform/soc/78b2000.serial
+    type = "serial", modalias = "of:NserialT(null)Cqcom,msm-uartdm-v1.4Cqcom,msm-uartdm", driver = "msm_serial"
+  platform device: name = qcom-socinfo
+    path = /devices/platform/smem/qcom-socinfo
+    type = "", modalias = "platform:qcom-socinfo", driver = "qcom-socinfo"
+  platform device: name = soc:qcom,nss_crypto
+    path = /devices/platform/soc/soc:qcom,nss_crypto
+    type = "qcom,nss_crypto", modalias = "of:Nqcom,nss_cryptoT(null)Cqcom,nss-crypto", driver = ""
+  platform device: name = 20000000.pci
+    path = /devices/platform/soc/20000000.pci
+    type = "pci", modalias = "of:NpciTpciCqti,pcie-ipq9574", driver = ""
+  platform device: name = 1905000.syscon
+    path = /devices/platform/soc/1905000.syscon
+    type = "syscon", modalias = "of:NsysconT(null)Csyscon", driver = ""
+  platform device: name = smem
+    path = /devices/platform/smem
+    type = "smem", modalias = "of:NsmemT(null)Cqcom,smem", driver = "qcom-smem"
+  platform device: name = 7d000.ssphy
+    path = /devices/platform/soc/7d000.ssphy
+    type = "ssphy", modalias = "of:NssphyT(null)Cqcom,ipq9574-qmp-usb3-phy", driver = "qcom-qmp-phy"
+  platform device: name = cd00000.remoteproc
+    path = /devices/platform/soc/cd00000.remoteproc
+    type = "remoteproc", modalias = "of:NremoteprocT(null)Cqcom,ipq9574-wcss-pil", driver = ""
+  platform device: name = soc:dummy-regulator@1
+    path = /devices/platform/soc/soc:dummy-regulator@1
+    type = "dummy-regulator", modalias = "of:Ndummy-regulatorT(null)Cregulator-fixed", driver = "reg-fixed-voltage"
+  platform device: name = 7a00000.ess-uniphy
+    path = /devices/platform/soc/7a00000.ess-uniphy
+    type = "ess-uniphy", modalias = "of:Ness-uniphyT(null)Cqcom,ess-uniphy", driver = ""
+  platform device: name = qti,sps
+    path = /devices/platform/qti,sps
+    type = "qti,sps", modalias = "of:Nqti,spsT(null)Cqti,msm-sps-4k", driver = "msm_sps"
+  platform device: name = ctx-save
+    path = /devices/platform/ctx-save
+    type = "ctx-save", modalias = "of:Nctx-saveT(null)Cqti,ctxt-save-ipq9574", driver = "qti_ctx_save_driver"
+  platform device: name = fc000.phy
+    path = /devices/platform/soc/fc000.phy
+    type = "phy", modalias = "of:NphyT(null)Cqcom,ipq9574-qmp-gen3x1-pcie-phy", driver = "qcom-qmp-phy"
+  platform device: name = 6001000.csr
+    path = /devices/platform/soc/6001000.csr
+    type = "csr", modalias = "of:NcsrT(null)Cqcom,coresight-csr", driver = "coresight-csr"
+  platform device: name = srd_trace
+    path = /devices/platform/srd_trace
+    type = "srd_trace", modalias = "of:Nsrd_traceT(null)Csrd", driver = ""
+  platform device: name = soc:ess-instance:ess-switch@3a000000
+    path = /devices/platform/soc/soc:ess-instance/soc:ess-instance:ess-switch@3a000000
+    type = "ess-switch", modalias = "of:Ness-switchT(null)Cqcom,ess-switch-ipq95xx", driver = "ess_ssdk"
+  platform device: name = snd-soc-dummy
+    path = /devices/platform/snd-soc-dummy
+    type = "", modalias = "platform:snd-soc-dummy", driver = "snd-soc-dummy"
+  platform device: name = 3a508000.dp3
+    path = /devices/platform/soc/3a508000.dp3
+    type = "dp3", modalias = "of:Ndp3TnetworkCqcom,nss-dp", driver = "nss-dp"
+    is net: interface = /sys/devices/platform/soc/3a508000.dp3/net/eth2
+  platform device: name = 704000.dma
+    path = /devices/platform/soc/704000.dma
+    type = "dma", modalias = "of:NdmaT(null)Cqcom,bam-v1.7.0", driver = "bam-dma-engine"
+  platform device: name = f4000.phy
+    path = /devices/platform/soc/f4000.phy
+    type = "phy", modalias = "of:NphyT(null)Cqcom,ipq9574-qmp-gen3x2-pcie-phy", driver = "qcom-qmp-phy"
+  platform device: name = qcn9224_legacy_irq2
+    path = /devices/platform/qcn9224_legacy_irq2
+    type = "qcn9224_legacy_irq2", modalias = "of:Nqcn9224_legacy_irq2T(null)Cqcom,qcn9224_legacy_irq", driver = ""
+  platform device: name = rpm-glink
+    path = /devices/platform/rpm-glink
+    type = "rpm-glink", modalias = "of:Nrpm-glinkT(null)Cqcom,glink-rpm", driver = "qcom_glink_rpm"
+  platform device: name = 29fc00.qti,rpm-log
+    path = /devices/platform/soc/29fc00.qti,rpm-log
+    type = "qti,rpm-log", modalias = "of:Nqti,rpm-logT(null)Cqti,rpm-log", driver = "msm_rpm_log"
+  platform device: name = Fixed MDIO bus.0
+    path = /devices/platform/Fixed MDIO bus.0
+    type = "", modalias = "platform:Fixed MDIO bus", driver = ""
+  platform device: name = soc
+    path = /devices/platform/soc
+    type = "soc", modalias = "of:NsocT(null)Csimple-bus", driver = ""
+  platform device: name = 797f000.dcc_v2
+    path = /devices/platform/soc/797f000.dcc_v2
+    type = "dcc_v2", modalias = "of:Ndcc_v2T(null)Cqcom,dcc-v2", driver = "msm-dcc"
+  platform device: name = soc:nss-macsec2
+    path = /devices/platform/soc/soc:nss-macsec2
+    type = "nss-macsec2", modalias = "of:Nnss-macsec2T(null)Cqcom,nss-macsec", driver = ""
+  platform device: name = 3a510000.dp5
+    path = /devices/platform/soc/3a510000.dp5
+    type = "dp5", modalias = "of:Ndp5TnetworkCqcom,nss-dp", driver = "nss-dp"
+    is net: interface = /sys/devices/platform/soc/3a510000.dp5/net/eth4
+  platform device: name = 73a000.crypto
+    path = /devices/platform/soc/73a000.crypto
+    type = "crypto", modalias = "of:NcryptoT(null)Cqcom,crypto-v5.1", driver = ""
+  platform device: name = 8af8800.usb3
+    path = /devices/platform/soc/8af8800.usb3
+    type = "usb3", modalias = "of:Nusb3T(null)Cqcom,ipq9574-dwc3Cqcom,dwc3", driver = "dwc3-qcom"
+  platform device: name = psci
+    path = /devices/platform/psci
+    type = "psci", modalias = "of:NpsciT(null)Carm,psci-1.0", driver = ""
+  platform device: name = e3000.prng
+    path = /devices/platform/soc/e3000.prng
+    type = "prng", modalias = "of:NprngT(null)Cqcom,msm-rng", driver = "msm_rng"
+  platform device: name = b018000.cpr4-ctrl
+    path = /devices/platform/soc/b018000.cpr4-ctrl
+    type = "cpr4-ctrl", modalias = "of:Ncpr4-ctrlT(null)Cqcom,cpr4-ipq9574-apss-regulator", driver = "qcom,cpr4-apss-regulator"
+  platform device: name = 7884000.dma
+    path = /devices/platform/soc/7884000.dma
+    type = "dma", modalias = "of:NdmaT(null)Cqcom,bam-v1.7.0", driver = "bam-dma-engine"
+  platform device: name = qseecom
+    path = /devices/platform/qseecom
+    type = "qseecom", modalias = "of:NqseecomT(null)Cipq9574-qseecom", driver = ""
+  platform device: name = qcn9224_legacy_irq0
+    path = /devices/platform/qcn9224_legacy_irq0
+    type = "qcn9224_legacy_irq0", modalias = "of:Nqcn9224_legacy_irq0T(null)Cqcom,qcn9224_legacy_irq", driver = ""
+  platform device: name = soc:nss-macsec0
+    path = /devices/platform/soc/soc:nss-macsec0
+    type = "nss-macsec0", modalias = "of:Nnss-macsec0T(null)Cqcom,nss-macsec", driver = ""
+  platform device: name = 39800000.eip197
+    path = /devices/platform/soc/39800000.eip197
+    type = "eip197", modalias = "of:Neip197T(null)Cqcom,eip", driver = ""
+  platform device: name = 3a50c000.dp4
+    path = /devices/platform/soc/3a50c000.dp4
+    type = "dp4", modalias = "of:Ndp4TnetworkCqcom,nss-dp", driver = "nss-dp"
+    is net: interface = /sys/devices/platform/soc/3a50c000.dp4/net/eth3
+  platform device: name = 4a9000.thermal-sensor
+    path = /devices/platform/soc/4a9000.thermal-sensor
+    type = "thermal-sensor", modalias = "of:Nthermal-sensorT(null)Cqcom,ipq9574-tsens", driver = "qcom-tsens"
+  platform device: name = soc:gpio_keys
+    path = /devices/platform/soc/soc:gpio_keys
+    type = "gpio_keys", modalias = "of:Ngpio_keysT(null)Cgpio-keys", driver = "gpio-keys"
+  platform device: name = b017000.watchdog
+    path = /devices/platform/soc/b017000.watchdog
+    type = "watchdog", modalias = "of:NwatchdogT(null)Cqcom,kpss-wdt", driver = "qcom_wdt"
+  platform device: name = firmware:qfprom
+    path = /devices/platform/firmware:qfprom
+    type = "qfprom", modalias = "of:NqfpromT(null)Cqcom,qfprom-sec", driver = "qcom_qfprom"
+  platform device: name = 1800000.gcc
+    path = /devices/platform/soc/1800000.gcc
+    type = "gcc", modalias = "of:NgccT(null)Cqcom,gcc-ipq9574", driver = "qcom,gcc-ipq9574"
+  platform device: name = a4000.qfprom
+    path = /devices/platform/soc/a4000.qfprom
+    type = "qfprom", modalias = "of:NqfpromT(null)Cqcom,qfprom", driver = "qcom,qfprom"
+  platform device: name = a4000.npu-cpr
+    path = /devices/platform/soc/a4000.npu-cpr
+    type = "npu-cpr", modalias = "of:Nnpu-cprT(null)Cqcom,cpr3-ipq9574-npu-regulator", driver = "qcom,cpr3-npu-regulator"
+  platform device: name = qti,scm_restart_reason
+    path = /devices/platform/qti,scm_restart_reason
+    type = "qti,scm_restart_reason", modalias = "of:Nqti,scm_restart_reasonT(null)Cqti_ipq9574,scm_restart_reason", driver = "qti_scm_restart_reason"
+  platform device: name = 78b6000.i2c
+    path = /devices/platform/soc/78b6000.i2c
+    type = "i2c", modalias = "of:Ni2cT(null)Cqcom,i2c-qup-v2.2.1", driver = "i2c_qup"
+  platform device: name = 39b00000.nsscc
+    path = /devices/platform/soc/39b00000.nsscc
+    type = "nsscc", modalias = "of:NnssccT(null)Cqcom,nsscc-ipq9574", driver = "qcom,nsscc-ipq9574"
+  platform device: name = soc:scm
+    path = /devices/platform/soc/soc:scm
+    type = "scm", modalias = "of:NscmT(null)Cqcom,scm", driver = "qcom_scm"
+  platform device: name = soc:license_manager
+    path = /devices/platform/soc/soc:license_manager
+    type = "license_manager", modalias = "of:Nlicense_managerT(null)Cqti,license-manager-service", driver = "license_manager"
+  platform device: name = qti,tzlog
+    path = /devices/platform/qti,tzlog
+    type = "qti,tzlog", modalias = "of:Nqti,tzlogT(null)Cqti,tzlog-ipq9574", driver = "qti_tzlog"
+  platform device: name = 8c000.phy
+    path = /devices/platform/soc/8c000.phy
+    type = "phy", modalias = "of:NphyT(null)Cqcom,ipq9574-qmp-gen3x2-pcie-phy", driver = "qcom-qmp-phy"
+  platform device: name = soc:ess-instance
+    path = /devices/platform/soc/soc:ess-instance
+    type = "ess-instance", modalias = "of:Ness-instanceT(null)Cqcom,ess-instance", driver = "ess_ssdk"
+  platform device: name = 3a504000.dp2
+    path = /devices/platform/soc/3a504000.dp2
+    type = "dp2", modalias = "of:Ndp2TnetworkCqcom,nss-dp", driver = "nss-dp"
+    is net: interface = /sys/devices/platform/soc/3a504000.dp2/net/eth1
+  platform device: name = 7b000.qusb
+    path = /devices/platform/soc/7b000.qusb
+    type = "qusb", modalias = "of:NqusbT(null)Cqcom,ipq9574-qusb2-phy", driver = "qcom-qusb2-phy"
+  platform device: name = b120000.timer
+    path = /devices/platform/soc/b120000.timer
+    type = "timer", modalias = "of:NtimerT(null)Carm,armv7-timer-mem", driver = ""
+  platform device: name = 78b1000.serial
+    path = /devices/platform/soc/78b1000.serial
+    type = "serial", modalias = "of:NserialT(null)Cqcom,msm-uartdm-v1.4Cqcom,msm-uartdm", driver = "msm_serial"
+  platform device: name = soc:timer
+    path = /devices/platform/soc/soc:timer
+    type = "timer", modalias = "of:NtimerT(null)Carm,armv8-timer", driver = ""
+  platform device: name = 10000000.pci
+    path = /devices/platform/soc/10000000.pci
+    type = "pci", modalias = "of:NpciTpciCqti,pcie-ipq9574", driver = ""
+  platform device: name = 78b9000.i2c
+    path = /devices/platform/soc/78b9000.i2c
+    type = "i2c", modalias = "of:Ni2cT(null)Cqcom,i2c-qup-v2.2.1", driver = "i2c_qup"
+  platform device: name = wcss-smp2p
+    path = /devices/platform/wcss-smp2p
+    type = "wcss-smp2p", modalias = "of:Nwcss-smp2pT(null)Cqcom,smp2p", driver = "qcom_smp2p"
+  platform device: name = 193d100.syscon
+    path = /devices/platform/soc/193d100.syscon
+    type = "syscon", modalias = "of:NsysconT(null)Csyscon", driver = ""
+  platform device: name = soc:qcom,test@0
+    path = /devices/platform/soc/soc:qcom,test@0
+    type = "qcom,test", modalias = "of:Nqcom,testT(null)Cqcom,testmhi", driver = ""
+  platform device: name = qcom,apss-ipq6018-clk
+    path = /devices/platform/soc/b111000.mailbox/qcom,apss-ipq6018-clk
+    type = "", modalias = "platform:qcom,apss-ipq6018-clk", driver = "qcom,apss-ipq6018-clk"
+  platform device: name = soc:nss-ppe
+    path = /devices/platform/soc/soc:nss-ppe
+    type = "nss-ppe", modalias = "of:Nnss-ppeT(null)Cqcom,nss-ppe", driver = "nss-ppe"
+  platform device: name = soc:dummy-regulator@0
+    path = /devices/platform/soc/soc:dummy-regulator@0
+    type = "dummy-regulator", modalias = "of:Ndummy-regulatorT(null)Cregulator-fixed", driver = "reg-fixed-voltage"
+  platform device: name = soc:eip_crypto
+    path = /devices/platform/soc/soc:eip_crypto
+    type = "eip_crypto", modalias = "of:Neip_cryptoT(null)Cqcom,eip_crypto", driver = ""
+  platform device: name = 1945000.syscon
+    path = /devices/platform/soc/1945000.syscon
+    type = "syscon", modalias = "of:NsysconT(null)Csyscon", driver = ""
+  platform device: name = qcn9224_legacy_irq3
+    path = /devices/platform/qcn9224_legacy_irq3
+    type = "qcn9224_legacy_irq3", modalias = "of:Nqcn9224_legacy_irq3T(null)Cqcom,qcn9224_legacy_irq", driver = ""
+  platform device: name = soc:nss-macsec3
+    path = /devices/platform/soc/soc:nss-macsec3
+    type = "nss-macsec3", modalias = "of:Nnss-macsec3T(null)Cqcom,nss-macsec", driver = ""
+  platform device: name = 400000.reg_update
+    path = /devices/platform/soc/400000.reg_update
+    type = "reg_update", modalias = "of:Nreg_updateT(null)Cipq,reg_update", driver = "reg_update"
+  platform device: name = 8a00000.dwc3
+    path = /devices/platform/soc/8af8800.usb3/8a00000.dwc3
+    type = "dwc3", modalias = "of:Ndwc3T(null)Csnps,dwc3", driver = "dwc3"
+  platform device: name = 3ab00000.edma
+    path = /devices/platform/soc/3ab00000.edma
+    type = "edma", modalias = "of:NedmaT(null)Cqcom,edma", driver = ""
+  platform device: name = cpufreq-dt
+    path = /devices/platform/cpufreq-dt
+    type = "", modalias = "platform:cpufreq-dt", driver = "cpufreq-dt"
+  platform device: name = pmu
+    path = /devices/platform/pmu
+    type = "pmu", modalias = "of:NpmuT(null)Carm,cortex-a73-pmu", driver = "armv8-pmu"
+  platform device: name = 8600000.qcom,msm-imem
+    path = /devices/platform/soc/8600000.qcom,msm-imem
+    type = "qcom,msm-imem", modalias = "of:Nqcom,msm-imemT(null)Cqcom,msm-imem", driver = ""
+  platform device: name = 39b28a04.nss-common
+    path = /devices/platform/soc/39b28a04.nss-common
+    type = "nss-common", modalias = "of:Nnss-commonT(null)Cqcom,nss-common", driver = ""
+  platform device: name = qcn9224_legacy_irq1
+    path = /devices/platform/qcn9224_legacy_irq1
+    type = "qcn9224_legacy_irq1", modalias = "of:Nqcn9224_legacy_irq1T(null)Cqcom,qcn9224_legacy_irq", driver = ""
+  platform device: name = 41000000.ramoops
+    path = /devices/platform/41000000.ramoops
+    type = "ramoops", modalias = "of:NramoopsT(null)Cramoops", driver = "ramoops"
+  platform device: name = soc:nss-macsec1
+    path = /devices/platform/soc/soc:nss-macsec1
+    type = "nss-macsec1", modalias = "of:Nnss-macsec1T(null)Cqcom,nss-macsec", driver = ""
+  platform device: name = 1000000.pinctrl
+    path = /devices/platform/soc/1000000.pinctrl
+    type = "pinctrl", modalias = "of:NpinctrlT(null)Cqcom,ipq9574-pinctrl", driver = "ipq9574-pinctrl"
+  platform device: name = 38f00000.nss
+    path = /devices/platform/soc/38f00000.nss
+    type = "nss", modalias = "of:NnssT(null)Cqcom,nss", driver = ""
+  platform device: name = 18000000.pci
+    path = /devices/platform/soc/18000000.pci
+    type = "pci", modalias = "of:NpciTpciCqti,pcie-ipq9574", driver = ""
+  platform device: name = 90000.mdio
+    path = /devices/platform/soc/90000.mdio
+    type = "mdio", modalias = "of:NmdioT(null)Cqcom,qca-mdioCqcom,ipq40xx-mdio", driver = "qca-mdio"
+  platform device: name = soc:leds
+    path = /devices/platform/soc/soc:leds
+    type = "leds", modalias = "of:NledsT(null)Cgpio-leds", driver = "leds-gpio"
+  platform device: name = 78000.qcom,msm-eud
+    path = /devices/platform/soc/78000.qcom,msm-eud
+    type = "qcom,msm-eud", modalias = "of:Nqcom,msm-eudT(null)Cqcom,msm-eud", driver = "msm-eud"
+  platform device: name = rpm-glink:glink-channel:regulators
+    path = /devices/platform/rpm-glink/rpm-glink.rpm_requests.-1.-1/rpm-glink:glink-channel:regulators
+    type = "regulators", modalias = "of:NregulatorsT(null)Cqcom,rpm-ipq9574-mp5496-regulators", driver = "qcom_rpm_smd_regulator"
+  platform device: name = b111000.mailbox
+    path = /devices/platform/soc/b111000.mailbox
+    type = "mailbox", modalias = "of:NmailboxT(null)Cqcom,ipq9574-apcs-apps-global", driver = "qcom_apcs_ipc"
+  platform device: name = qcom-cpufreq-nvmem
+    path = /devices/platform/qcom-cpufreq-nvmem
+    type = "", modalias = "platform:qcom-cpufreq-nvmem", driver = "qcom-cpufreq-nvmem"
+>> pci.8: of_platform
+sysfs: no such bus: of_platform
+>> pci.9: vm
+sysfs: no such bus: vm
+>> pci.10: virtio
+sysfs: no such bus: virtio
+>> pci.11: ibmebus
+sysfs: no such bus: ibmebus
+>> pci.12: uisvirtpci
+sysfs: no such bus: uisvirtpci
+>> pci.13: mmc
+  mmc device: name = mmc0:0001
+    path = /devices/platform/soc/7804000.sdhci/mmc_host/mmc0/mmc0:0001
+    driver = "mmcblk"
+    index = 0
+    type = "MMC"
+>> pci.14: sdio
+sysfs: no such bus: sdio
+>> pci.15: nd
+sysfs: no such bus: nd
+>> pci.16: visorbus
+sysfs: no such bus: visorbus
+>> pci.17: mdio
+  mdio device: name = 90000.mdio:03
+    path = /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:03
+  mdio device: name = 90000.mdio:01
+    path = /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:01
+  mdio device: name = 90000.mdio:1f
+    path = /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:1f
+  mdio device: name = 90000.mdio:08
+    path = /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:08
+  mdio device: name = 90000.mdio:04
+    path = /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:04
+  mdio device: name = 90000.mdio:02
+    path = /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:02
+  mdio device: name = 90000.mdio:00
+    path = /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:00
+  mdio device: name = 90000.mdio:1e
+    path = /devices/platform/soc/90000.mdio/mdio_bus/90000.mdio/90000.mdio:1e
+>> monitor.1: ddc
+>> monitor.2: bios
+>> monitor.3: pci
+>> monitor.4: internal db
+>> monitor.5: prom
+>> pcmcia.1: sysfs drivers
+>> pcmcia.2: pcmcia
+sysfs: no such bus: pcmcia
+>> pcmcia.3: pcmcia ctrl
+sysfs: no such class: pcmcia_socket
+>> serial.1: read info
+----- serial info -----
+----- serial info end -----
+>> serial.2: build list
+>> misc.5: misc data
+----- misc resources -----
+irq:0  4 (   306655) "20 Level     arch_timer"
+irq:0  6 (        0) "39 Level     arch_mem_timer"
+irq:0  8 (        0) "23 Level     arm-pmu"
+irq:0  9 (        0) "276 Edge      tzerror"
+irq:0 10 (        0) "239 Level     bam_dma"
+irq:0 11 (        0) "35 Edge      wdt_bark"
+irq:0 13 (        0) "270 Level     bam_dma"
+irq:0 14 (      611) "338 Level     msm_serial0"
+irq:0 15 (      559) "339 Level     msm_serial1"
+irq:0 16 (     7134) "128 Level     i2c_qup"
+irq:0 17 (        0) "331 Level     i2c_qup"
+irq:0 18 (        2) "127 Level     78b5000.spi"
+irq:0 19 (        0) "399 Level     edma_txcmpl_4"
+irq:0 20 (        0) "400 Level     edma_txcmpl_5"
+irq:0 21 (        0) "401 Level     edma_txcmpl_6"
+irq:0 22 (        0) "402 Level     edma_txcmpl_7"
+irq:0 23 (        0) "403 Level     edma_txcmpl_8"
+irq:0 24 (        0) "404 Level     edma_txcmpl_9"
+irq:0 25 (        0) "405 Level     edma_txcmpl_10"
+irq:0 26 (        0) "406 Level     edma_txcmpl_11"
+irq:0 27 (        0) "407 Level     edma_txcmpl_12"
+irq:0 28 (        0) "408 Level     edma_txcmpl_13"
+irq:0 29 (        0) "409 Level     edma_txcmpl_14"
+irq:0 30 (        0) "410 Level     edma_txcmpl_15"
+irq:0 31 (        0) "411 Level     edma_txcmpl_16"
+irq:0 32 (        0) "412 Level     edma_txcmpl_17"
+irq:0 33 (        0) "413 Level     edma_txcmpl_18"
+irq:0 34 (        0) "414 Level     edma_txcmpl_19"
+irq:0 35 (      241) "415 Level     edma_txcmpl_20"
+irq:0 36 (      269) "416 Level     edma_txcmpl_21"
+irq:0 37 (      911) "541 Level     edma_txcmpl_22"
+irq:0 38 (     1102) "540 Level     edma_txcmpl_23"
+irq:0 39 (        0) "539 Level     edma_txcmpl_24"
+irq:0 40 (        0) "538 Level     edma_txcmpl_25"
+irq:0 41 (        0) "537 Level     edma_txcmpl_26"
+irq:0 42 (        0) "536 Level     edma_txcmpl_27"
+irq:0 43 (        0) "535 Level     edma_txcmpl_28"
+irq:0 44 (        0) "534 Level     edma_txcmpl_29"
+irq:0 45 (        0) "533 Level     edma_txcmpl_30"
+irq:0 46 (        0) "532 Level     edma_txcmpl_31"
+irq:0 47 (     1970) "383 Level     edma_rxdesc_20"
+irq:0 48 (      619) "384 Level     edma_rxdesc_21"
+irq:0 49 (     3695) "385 Level     edma_rxdesc_22"
+irq:0 50 (        0) "386 Level     edma_rxdesc_23"
+irq:0 51 (        0) "293 Level     edma_misc"
+irq:0 61 (     1423) "155 Level     mmc0"
+irq:0 62 (        3) "170 Level     7804000.sdhci"
+irq:0 81 (        0) "501 Level     eud_irq"
+irq:0 82 (        0) "198 Edge      tmc-etr"
+irq:0 83 (        0) "216 Edge      tsens_interrupt"
+irq:0 84 (        9) "47 Edge      cpr3"
+irq:0 85 (        0) "354 Edge      smp2p"
+irq:0 86 (       36) "200 Edge      glink-native"
+irq:0 87 (        0) "33 Edge      soc:gpio_keys"
+irq:0 88 (        0) "172 Level     xhci-hcd:usb1"
+----- misc resources end -----
+>> parallel.1: pp mod
+----- exec: "/sbin/modprobe parport_pc" -----
+----- return code: ? -----
+----- exec: "/sbin/modprobe lp" -----
+----- return code: ? -----
+>> parallel.2.1: lp read info
+>> parallel.2.2: lp read info
+>> parallel.2.3: lp read info
+----- parallel info -----
+----- parallel info end -----
+>> block.1: block modules
+----- exec: "/sbin/modprobe ide-cd_mod " -----
+----- return code: ? -----
+----- exec: "/sbin/modprobe ide-disk " -----
+----- return code: ? -----
+----- exec: "/sbin/modprobe sr_mod " -----
+----- return code: ? -----
+----- exec: "/sbin/modprobe st " -----
+----- return code: ? -----
+>> block.2: sysfs drivers
+>> block.3: cdrom
+>> block.4: partition
+----- /proc/partitions -----
+     1        0       4096 ram0
+     1        1       4096 ram1
+     1        2       4096 ram2
+     1        3       4096 ram3
+     1        4       4096 ram4
+     1        5       4096 ram5
+     1        6       4096 ram6
+     1        7       4096 ram7
+     1        8       4096 ram8
+     1        9       4096 ram9
+     1       10       4096 ram10
+     1       11       4096 ram11
+     1       12       4096 ram12
+     1       13       4096 ram13
+     1       14       4096 ram14
+     1       15       4096 ram15
+     7        0      32768 loop0
+     7        1     262144 loop1
+     7        2    3424256 loop2
+   179        0    3817472 mmcblk0
+   179        1       1024 mmcblk0p1
+   179        2       1024 mmcblk0p2
+   179        3        256 mmcblk0p3
+   179        4        256 mmcblk0p4
+   179        5       1792 mmcblk0p5
+   179        6       1792 mmcblk0p6
+   179        7        256 mmcblk0p7
+   179        8        256 mmcblk0p8
+   179        9        256 mmcblk0p9
+   179       10        256 mmcblk0p10
+   179       11        512 mmcblk0p11
+   179       12        512 mmcblk0p12
+   179       13        256 mmcblk0p13
+   179       14        256 mmcblk0p14
+   179       15        256 mmcblk0p15
+   179       16        256 mmcblk0p16
+   179       17        256 mmcblk0p17
+   179       18        768 mmcblk0p18
+   179       19        768 mmcblk0p19
+   179       20       1024 mmcblk0p20
+   179       21        512 mmcblk0p21
+   179       22        256 mmcblk0p22
+   179       23      10240 mmcblk0p23
+   179       24      10240 mmcblk0p24
+   179       25       7168 mmcblk0p25
+   179       26       7168 mmcblk0p26
+   179       27     124928 mmcblk0p27
+   179       28     124928 mmcblk0p28
+   179       29       1536 mmcblk0p29
+----- /proc/partitions end -----
+disks:
+  ram0
+  ram1
+  ram2
+  ram3
+  ram4
+  ram5
+  ram6
+  ram7
+  ram8
+  ram9
+  ram10
+  ram11
+  ram12
+  ram13
+  ram14
+  ram15
+  mmcblk0
+partitions:
+  mmcblk0p1
+  mmcblk0p2
+  mmcblk0p3
+  mmcblk0p4
+  mmcblk0p5
+  mmcblk0p6
+  mmcblk0p7
+  mmcblk0p8
+  mmcblk0p9
+  mmcblk0p10
+  mmcblk0p11
+  mmcblk0p12
+  mmcblk0p13
+  mmcblk0p14
+  mmcblk0p15
+  mmcblk0p16
+  mmcblk0p17
+  mmcblk0p18
+  mmcblk0p19
+  mmcblk0p20
+  mmcblk0p21
+  mmcblk0p22
+  mmcblk0p23
+  mmcblk0p24
+  mmcblk0p25
+  mmcblk0p26
+  mmcblk0p27
+  mmcblk0p28
+  mmcblk0p29
+>> block.5: get sysfs block dev data
+-----  lsscsi -----
+-----  lsscsi end -----
+  block: name = loop1, path = /class/block/loop1
+    dev = 7:1
+    range = 1
+  block: name = mmcblk0p22, path = /class/block/mmcblk0p22
+    dev = 179:22
+  block: name = ram2, path = /class/block/ram2
+    dev = 1:2
+    range = 1
+>> block.5: /dev/ram2
+>> block.5.1: /dev/ram2 geo
+  dev = /dev/ram2, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram2: ioctl(block size) ok
+/dev/ram2: ioctl(disk size) ok
+  block: name = mmcblk0p12, path = /class/block/mmcblk0p12
+    dev = 179:12
+  block: name = mmcblk0p9, path = /class/block/mmcblk0p9
+    dev = 179:9
+  block: name = mmcblk0p20, path = /class/block/mmcblk0p20
+    dev = 179:20
+  block: name = ram0, path = /class/block/ram0
+    dev = 1:0
+    range = 1
+>> block.5: /dev/ram0
+>> block.5.1: /dev/ram0 geo
+  dev = /dev/ram0, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram0: ioctl(block size) ok
+/dev/ram0: ioctl(disk size) ok
+  block: name = mmcblk0p10, path = /class/block/mmcblk0p10
+    dev = 179:10
+  block: name = mmcblk0p29, path = /class/block/mmcblk0p29
+    dev = 179:29
+  block: name = mmcblk0p7, path = /class/block/mmcblk0p7
+    dev = 179:7
+  block: name = ram9, path = /class/block/ram9
+    dev = 1:9
+    range = 1
+>> block.5: /dev/ram9
+>> block.5.1: /dev/ram9 geo
+  dev = /dev/ram9, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram9: ioctl(block size) ok
+/dev/ram9: ioctl(disk size) ok
+  block: name = mmcblk0p19, path = /class/block/mmcblk0p19
+    dev = 179:19
+  block: name = mmcblk0, path = /class/block/mmcblk0
+    dev = 179:0
+    range = 32
+    block device: bus = mmc, bus_id = mmc0:0001 driver = mmcblk
+      path = /devices/platform/soc/7804000.sdhci/mmc_host/mmc0/mmc0:0001
+>> block.5: /dev/mmcblk0
+>> block.5.1: /dev/mmcblk0 geo
+  dev = /dev/mmcblk0, fd = 3
+  open ok, fd = 3
+/dev/mmcblk0: ioctl(geo) ok
+/dev/mmcblk0: ioctl(block size) ok
+/dev/mmcblk0: ioctl(disk size) ok
+  block: name = loop6, path = /class/block/loop6
+    dev = 7:6
+    range = 1
+  block: name = mmcblk0p27, path = /class/block/mmcblk0p27
+    dev = 179:27
+  block: name = mmcblk0p5, path = /class/block/mmcblk0p5
+    dev = 179:5
+  block: name = ram14, path = /class/block/ram14
+    dev = 1:14
+    range = 1
+>> block.5: /dev/ram14
+>> block.5.1: /dev/ram14 geo
+  dev = /dev/ram14, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram14: ioctl(block size) ok
+/dev/ram14: ioctl(disk size) ok
+  block: name = mmcblk0boot0, path = /class/block/mmcblk0boot0
+    dev = 179:32
+    range = 32
+    block device: bus = block, bus_id = mmcblk0 driver = (null)
+      path = /devices/platform/soc/7804000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0
+  block: name = ram7, path = /class/block/ram7
+    dev = 1:7
+    range = 1
+>> block.5: /dev/ram7
+>> block.5.1: /dev/ram7 geo
+  dev = /dev/ram7, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram7: ioctl(block size) ok
+/dev/ram7: ioctl(disk size) ok
+  block: name = mmcblk0p17, path = /class/block/mmcblk0p17
+    dev = 179:17
+  block: name = loop4, path = /class/block/loop4
+    dev = 7:4
+    range = 1
+  block: name = mmcblk0p25, path = /class/block/mmcblk0p25
+    dev = 179:25
+  block: name = mmcblk0p3, path = /class/block/mmcblk0p3
+    dev = 179:3
+  block: name = ram12, path = /class/block/ram12
+    dev = 1:12
+    range = 1
+>> block.5: /dev/ram12
+>> block.5.1: /dev/ram12 geo
+  dev = /dev/ram12, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram12: ioctl(block size) ok
+/dev/ram12: ioctl(disk size) ok
+  block: name = ram5, path = /class/block/ram5
+    dev = 1:5
+    range = 1
+>> block.5: /dev/ram5
+>> block.5.1: /dev/ram5 geo
+  dev = /dev/ram5, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram5: ioctl(block size) ok
+/dev/ram5: ioctl(disk size) ok
+  block: name = mmcblk0p15, path = /class/block/mmcblk0p15
+    dev = 179:15
+  block: name = loop2, path = /class/block/loop2
+    dev = 7:2
+    range = 1
+  block: name = mmcblk0p23, path = /class/block/mmcblk0p23
+    dev = 179:23
+  block: name = mmcblk0p1, path = /class/block/mmcblk0p1
+    dev = 179:1
+  block: name = ram10, path = /class/block/ram10
+    dev = 1:10
+    range = 1
+>> block.5: /dev/ram10
+>> block.5.1: /dev/ram10 geo
+  dev = /dev/ram10, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram10: ioctl(block size) ok
+/dev/ram10: ioctl(disk size) ok
+  block: name = ram3, path = /class/block/ram3
+    dev = 1:3
+    range = 1
+>> block.5: /dev/ram3
+>> block.5.1: /dev/ram3 geo
+  dev = /dev/ram3, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram3: ioctl(block size) ok
+/dev/ram3: ioctl(disk size) ok
+  block: name = mmcblk0p13, path = /class/block/mmcblk0p13
+    dev = 179:13
+  block: name = loop0, path = /class/block/loop0
+    dev = 7:0
+    range = 1
+  block: name = mmcblk0p21, path = /class/block/mmcblk0p21
+    dev = 179:21
+  block: name = ram1, path = /class/block/ram1
+    dev = 1:1
+    range = 1
+>> block.5: /dev/ram1
+>> block.5.1: /dev/ram1 geo
+  dev = /dev/ram1, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram1: ioctl(block size) ok
+/dev/ram1: ioctl(disk size) ok
+  block: name = mmcblk0p11, path = /class/block/mmcblk0p11
+    dev = 179:11
+  block: name = mmcblk0p8, path = /class/block/mmcblk0p8
+    dev = 179:8
+  block: name = loop7, path = /class/block/loop7
+    dev = 7:7
+    range = 1
+  block: name = mmcblk0p28, path = /class/block/mmcblk0p28
+    dev = 179:28
+  block: name = mmcblk0p6, path = /class/block/mmcblk0p6
+    dev = 179:6
+  block: name = ram15, path = /class/block/ram15
+    dev = 1:15
+    range = 1
+>> block.5: /dev/ram15
+>> block.5.1: /dev/ram15 geo
+  dev = /dev/ram15, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram15: ioctl(block size) ok
+/dev/ram15: ioctl(disk size) ok
+  block: name = mmcblk0boot1, path = /class/block/mmcblk0boot1
+    dev = 179:64
+    range = 32
+    block device: bus = block, bus_id = mmcblk0 driver = (null)
+      path = /devices/platform/soc/7804000.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0
+  block: name = ram8, path = /class/block/ram8
+    dev = 1:8
+    range = 1
+>> block.5: /dev/ram8
+>> block.5.1: /dev/ram8 geo
+  dev = /dev/ram8, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram8: ioctl(block size) ok
+/dev/ram8: ioctl(disk size) ok
+  block: name = mmcblk0p18, path = /class/block/mmcblk0p18
+    dev = 179:18
+  block: name = loop5, path = /class/block/loop5
+    dev = 7:5
+    range = 1
+  block: name = mmcblk0p26, path = /class/block/mmcblk0p26
+    dev = 179:26
+  block: name = mmcblk0p4, path = /class/block/mmcblk0p4
+    dev = 179:4
+  block: name = ram13, path = /class/block/ram13
+    dev = 1:13
+    range = 1
+>> block.5: /dev/ram13
+>> block.5.1: /dev/ram13 geo
+  dev = /dev/ram13, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram13: ioctl(block size) ok
+/dev/ram13: ioctl(disk size) ok
+  block: name = ram6, path = /class/block/ram6
+    dev = 1:6
+    range = 1
+>> block.5: /dev/ram6
+>> block.5.1: /dev/ram6 geo
+  dev = /dev/ram6, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram6: ioctl(block size) ok
+/dev/ram6: ioctl(disk size) ok
+  block: name = mmcblk0p16, path = /class/block/mmcblk0p16
+    dev = 179:16
+  block: name = loop3, path = /class/block/loop3
+    dev = 7:3
+    range = 1
+  block: name = mmcblk0p24, path = /class/block/mmcblk0p24
+    dev = 179:24
+  block: name = mmcblk0p2, path = /class/block/mmcblk0p2
+    dev = 179:2
+  block: name = ram11, path = /class/block/ram11
+    dev = 1:11
+    range = 1
+>> block.5: /dev/ram11
+>> block.5.1: /dev/ram11 geo
+  dev = /dev/ram11, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram11: ioctl(block size) ok
+/dev/ram11: ioctl(disk size) ok
+  block: name = ram4, path = /class/block/ram4
+    dev = 1:4
+    range = 1
+>> block.5: /dev/ram4
+>> block.5.1: /dev/ram4 geo
+  dev = /dev/ram4, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/ram4: ioctl(block size) ok
+/dev/ram4: ioctl(disk size) ok
+  block: name = mmcblk0p14, path = /class/block/mmcblk0p14
+    dev = 179:14
+>> scsi.1: scsi modules
+----- exec: "/sbin/modprobe sg " -----
+----- return code: ? -----
+>> scsi.2: scsi tape
+sysfs: no such class: scsi_tape
+>> scsi.3: scsi generic
+sysfs: no such class: scsi_generic
+>> usb.1: sysfs drivers
+>> usb.2: usb
+  usb dev: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb1
+  usb dev: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb2
+  usb device: name = usb1
+    path = /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb1
+  usb device: name = usb2
+    path = /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb2
+  usb device: name = 1-0:1.0
+    path = /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb1/1-0:1.0
+    modalias = "usb:v1D6Bp0002d0504dc09dsc00dp01ic09isc00ip00in00"
+    bInterfaceNumber = 0
+    bInterfaceClass = 9
+    bInterfaceSubClass = 0
+    bInterfaceProtocol = 0
+    if: 1-0:1.0 @ /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb1
+    bDeviceClass = 9
+    bDeviceSubClass = 0
+    bDeviceProtocol = 1
+    idVendor = 0x1d6b
+    idProduct = 0x0002
+    manufacturer = "Linux 5.4.213 xhci-hcd"
+    product = "xHCI Host Controller"
+    serial = "xhci-hcd.0.auto"
+    bcdDevice = 0504
+    speed = "480"
+  usb device: name = 2-0:1.0
+    path = /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb2/2-0:1.0
+    modalias = "usb:v1D6Bp0003d0504dc09dsc00dp03ic09isc00ip00in00"
+    bInterfaceNumber = 0
+    bInterfaceClass = 9
+    bInterfaceSubClass = 0
+    bInterfaceProtocol = 0
+    if: 2-0:1.0 @ /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb2
+    bDeviceClass = 9
+    bDeviceSubClass = 0
+    bDeviceProtocol = 3
+    idVendor = 0x1d6b
+    idProduct = 0x0003
+    manufacturer = "Linux 5.4.213 xhci-hcd"
+    product = "xHCI Host Controller"
+    serial = "xhci-hcd.0.auto"
+    bcdDevice = 0504
+    speed = "5000"
+>> usb.3.1: joydev mod
+----- exec: "/sbin/modprobe joydev " -----
+----- return code: ? -----
+>> usb.3.2: evdev mod
+----- exec: "/sbin/modprobe evdev " -----
+----- return code: ? -----
+>> usb.3.3: input
+sysfs: no such class: input
+>> usb.3.4: lp
+sysfs: no such class: usb
+>> usb.3.5: serial
+>> modem.1: serial
+******  started child process 12640 (15s/120s)  ******
+******  stopped child process 12640 (120s)  ******
+>> mouse.2: serial
+******  started child process 12641 (20s/20s)  ******
+******  stopped child process 12641 (20s)  ******
+>> input.1: joydev mod
+----- exec: "/sbin/modprobe joydev " -----
+----- return code: ? -----
+>> input.1.1: evdev mod
+----- exec: "/sbin/modprobe evdev " -----
+----- return code: ? -----
+>> input.2: input
+----- /proc/bus/input/devices -----
+----- /proc/bus/input/devices end -----
+>> kbd.2: uml
+>> cpu.1: cpuinfo
+----- /proc/cpuinfo -----
+  processor	: 0
+  BogoMIPS	: 48.00
+  Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+  CPU implementer	: 0x41
+  CPU architecture: 8
+  CPU variant	: 0x1
+  CPU part	: 0xd09
+  CPU revision	: 0
+  
+  processor	: 1
+  BogoMIPS	: 48.00
+  Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+  CPU implementer	: 0x41
+  CPU architecture: 8
+  CPU variant	: 0x1
+  CPU part	: 0xd09
+  CPU revision	: 0
+  
+  processor	: 2
+  BogoMIPS	: 48.00
+  Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+  CPU implementer	: 0x41
+  CPU architecture: 8
+  CPU variant	: 0x1
+  CPU part	: 0xd09
+  CPU revision	: 0
+  
+  processor	: 3
+  BogoMIPS	: 48.00
+  Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+  CPU implementer	: 0x41
+  CPU architecture: 8
+  CPU variant	: 0x1
+  CPU part	: 0xd09
+  CPU revision	: 0
+  
+----- /proc/cpuinfo end -----
+>> kbd.3: serial console
+>> fb.1: read info
+>> net.1: get network data
+  net interface: name = ip6gre0, path = /class/net/ip6gre0
+    type = 823
+    hw_addr = 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+  ip6gre0: ethtool permanent hw address[16]: 02:24:d1:a4:c2:ab:00:00:00:00:00:00:00:00:00:00
+    GDRVINFO ethtool error: Not supported
+    ethtool private flags: 0
+  net interface: name = dummy0, path = /class/net/dummy0
+    type = 1
+    hw_addr = fa:14:f5:40:6f:d7
+  dummy0: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    ethtool driver: dummy
+    ethtool    bus: 
+    ethtool private flags: 0
+  net interface: name = gretap0, path = /class/net/gretap0
+    type = 1
+    hw_addr = 00:00:00:00:00:00
+  gretap0: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    ethtool private flags: 0
+  net interface: name = eth4, path = /class/net/eth4
+    type = 1
+    carrier = 0
+    hw_addr = bc:b9:23:81:2a:7a
+    net device: path = /devices/platform/soc/3a510000.dp5
+    net driver: name = nss-dp, path = /bus/platform/drivers/nss-dp
+  eth4: ethtool permanent hw address[6]: bc:b9:23:81:2a:7a
+    ethtool private flags: 4
+    Mirror-set-ingress = 0
+    Mirror-set-egress = 0
+    Mirror-set-analysis-ingress = 0
+    Mirror-set-analysis-egress = 0
+  net interface: name = erspan0, path = /class/net/erspan0
+    type = 1
+    hw_addr = 00:00:00:00:00:00
+  erspan0: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    ethtool private flags: 0
+  net interface: name = eth2, path = /class/net/eth2
+    type = 1
+    carrier = 0
+    hw_addr = be:b9:23:83:2a:78
+    net device: path = /devices/platform/soc/3a508000.dp3
+    net driver: name = nss-dp, path = /bus/platform/drivers/nss-dp
+  eth2: ethtool permanent hw address[6]: be:b9:23:83:2a:78
+    ethtool private flags: 4
+    Mirror-set-ingress = 0
+    Mirror-set-egress = 0
+    Mirror-set-analysis-ingress = 0
+    Mirror-set-analysis-egress = 0
+  net interface: name = br-lan, path = /class/net/br-lan
+    type = 1
+    carrier = 0
+    hw_addr = bc:b9:23:81:2a:78
+  br-lan: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    ethtool driver: bridge
+    ethtool    bus: N/A
+    ethtool private flags: 0
+  net interface: name = eth0, path = /class/net/eth0
+    type = 1
+    carrier = 0
+    hw_addr = bc:b9:23:81:2a:78
+    net device: path = /devices/platform/soc/3a500000.dp1
+    net driver: name = nss-dp, path = /bus/platform/drivers/nss-dp
+  eth0: ethtool permanent hw address[6]: bc:b9:23:81:2a:78
+    ethtool private flags: 4
+    Mirror-set-ingress = 0
+    Mirror-set-egress = 0
+    Mirror-set-analysis-ingress = 0
+    Mirror-set-analysis-egress = 0
+  net interface: name = gre0, path = /class/net/gre0
+    type = 778
+    hw_addr = 00:00:00:00
+  gre0: ethtool permanent hw address[4]: 00:00:00:00
+    ethtool private flags: 0
+  net interface: name = miireg, path = /class/net/miireg
+    type = 0
+    hw_addr = 
+  miireg: ethtool permanent hw address[0]: (null)
+    ethtool private flags: 0
+  net interface: name = ip6tnl0, path = /class/net/ip6tnl0
+    type = 769
+    hw_addr = 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+  ip6tnl0: ethtool permanent hw address[16]: 92:72:71:e0:df:45:00:00:00:00:00:00:00:00:00:00
+    GDRVINFO ethtool error: Not supported
+    ethtool private flags: 0
+  net interface: name = eth5, path = /class/net/eth5
+    type = 1
+    carrier = 0
+    hw_addr = be:b9:23:84:2a:78
+    net device: path = /devices/platform/soc/3a514000.dp6
+    net driver: name = nss-dp, path = /bus/platform/drivers/nss-dp
+  eth5: ethtool permanent hw address[6]: be:b9:23:84:2a:78
+    ethtool private flags: 4
+    Mirror-set-ingress = 0
+    Mirror-set-egress = 0
+    Mirror-set-analysis-ingress = 0
+    Mirror-set-analysis-egress = 0
+  net interface: name = lo, path = /class/net/lo
+    type = 772
+    carrier = 1
+    hw_addr = 00:00:00:00:00:00
+  lo: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    GDRVINFO ethtool error: Not supported
+    ethtool private flags: 0
+  net interface: name = eth3, path = /class/net/eth3
+    type = 1
+    carrier = 1
+    hw_addr = bc:b9:23:81:2a:79
+    net device: path = /devices/platform/soc/3a50c000.dp4
+    net driver: name = nss-dp, path = /bus/platform/drivers/nss-dp
+  eth3: ethtool permanent hw address[6]: bc:b9:23:81:2a:79
+    ethtool private flags: 4
+    Mirror-set-ingress = 0
+    Mirror-set-egress = 0
+    Mirror-set-analysis-ingress = 0
+    Mirror-set-analysis-egress = 0
+  net interface: name = eth1, path = /class/net/eth1
+    type = 1
+    carrier = 0
+    hw_addr = be:b9:23:82:2a:78
+    net device: path = /devices/platform/soc/3a504000.dp2
+    net driver: name = nss-dp, path = /bus/platform/drivers/nss-dp
+  eth1: ethtool permanent hw address[6]: be:b9:23:82:2a:78
+    ethtool private flags: 4
+    Mirror-set-ingress = 0
+    Mirror-set-egress = 0
+    Mirror-set-analysis-ingress = 0
+    Mirror-set-analysis-egress = 0
+  net interface: name = bond0, path = /class/net/bond0
+    type = 1
+    hw_addr = ce:93:e5:40:e8:d7
+  bond0: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    ethtool driver: bonding
+    ethtool    bus: 
+    ethtool private flags: 0
+  ip6gre0: GLINK ethtool error: Not supported
+  dummy0: GLINK ethtool error: Not supported
+  gretap0: GLINK ethtool error: Not supported
+  erspan0: GLINK ethtool error: Not supported
+  gre0: GLINK ethtool error: Not supported
+  miireg: GLINK ethtool error: Not supported
+  ip6tnl0: GLINK ethtool error: Not supported
+  bond0: ethtool link state: 0
+>> pppoe.1: looking for pppoe
+>> pppoe.2: discovery
+gretap0: Interface has too low MTU
+erspan0: Interface has too low MTU
+Attempt number 1
+dummy0: Sending PADI packet
+send failed: Network is down
+eth4: Sending PADI packet
+eth2: Sending PADI packet
+br-lan: Sending PADI packet
+eth0: Sending PADI packet
+eth5: Sending PADI packet
+eth3: Sending PADI packet
+eth1: Sending PADI packet
+bond0: Sending PADI packet
+send failed: Network is down
+recv failed: Network is down
+recv failed: Network is down
+Timeout waiting for PADO packets
+Attempt number 2
+dummy0: Sending PADI packet
+send failed: Network is down
+eth4: Sending PADI packet
+eth2: Sending PADI packet
+br-lan: Sending PADI packet
+eth0: Sending PADI packet
+eth5: Sending PADI packet
+eth3: Sending PADI packet
+eth1: Sending PADI packet
+bond0: Sending PADI packet
+send failed: Network is down
+Timeout waiting for PADO packets
+>> wlan.1: detecting wlan features
+>> isdn.1: list
+>> dsl.1: list
+>> int.2: cdrom
+>> int.3: media
+>> int.4.1: /dev/ram2
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.2: /dev/ram0
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.3: /dev/ram9
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.4: /dev/mmcblk0
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.5: /dev/ram14
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.6: /dev/ram7
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.7: /dev/ram12
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.8: /dev/ram5
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.9: /dev/ram10
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.10: /dev/ram3
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.11: /dev/ram1
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.12: /dev/ram15
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.13: /dev/ram8
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.14: /dev/ram13
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.15: /dev/ram6
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.16: /dev/ram11
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.17: /dev/ram4
+  read_block0: 512 bytes (5s, 0us)
+>> int.4: floppy
+>> int.6: mouse
+>> int.7: hdb
+>> int.7.1: modules
+>> int.8: usbscsi
+>> int.9: hotplug
+>> int.10: modem
+>> int.11: wlan
+>> int.12: udev
+-----  udevinfo -----
+-----  udevinfo end -----
+>> int.13: device names
+>> int.16: parent
+  prop read: rdCR.n_7QNeEnh23 (failed)
+  old prop read: rdCR.n_7QNeEnh23 (failed)
+  prop read: rdCR.CxwsZFjVASF (failed)
+  old prop read: rdCR.CxwsZFjVASF (failed)
+  prop read: jnVm.TfPFe67fIBB (failed)
+  old prop read: jnVm.TfPFe67fIBB (failed)
+  prop read: 7grC.TfPFe67fIBB (failed)
+  old prop read: 7grC.TfPFe67fIBB (failed)
+  prop read: N8N7.vcc7vMyNqX6 (failed)
+  old prop read: N8N7.vcc7vMyNqX6 (failed)
+  prop read: dVuc.TfPFe67fIBB (failed)
+  old prop read: dVuc.TfPFe67fIBB (failed)
+  prop read: D_l_.TfPFe67fIBB (failed)
+  old prop read: D_l_.TfPFe67fIBB (failed)
+  prop read: zD5l.TfPFe67fIBB (failed)
+  old prop read: zD5l.TfPFe67fIBB (failed)
+  prop read: dTb_.TfPFe67fIBB (failed)
+  old prop read: dTb_.TfPFe67fIBB (failed)
+  prop read: b0_u.TzQFl_vZhO4 (failed)
+  old prop read: b0_u.TzQFl_vZhO4 (failed)
+  prop read: 7tlP.Fxp0d3BezAE (failed)
+  old prop read: 7tlP.Fxp0d3BezAE (failed)
+  prop read: CWFH.Fxp0d3BezAE (failed)
+  old prop read: CWFH.Fxp0d3BezAE (failed)
+  prop read: XOSI.Fxp0d3BezAE (failed)
+  old prop read: XOSI.Fxp0d3BezAE (failed)
+  prop read: HAKk.Fxp0d3BezAE (failed)
+  old prop read: HAKk.Fxp0d3BezAE (failed)
+  prop read: l7UW.SE1wIdpsiiC (failed)
+  old prop read: l7UW.SE1wIdpsiiC (failed)
+  prop read: CJka.SE1wIdpsiiC (failed)
+  old prop read: CJka.SE1wIdpsiiC (failed)
+  prop read: fU_e.SE1wIdpsiiC (failed)
+  old prop read: fU_e.SE1wIdpsiiC (failed)
+  prop read: 6gEj.SE1wIdpsiiC (failed)
+  old prop read: 6gEj.SE1wIdpsiiC (failed)
+  prop read: ZrUn.SE1wIdpsiiC (failed)
+  old prop read: ZrUn.SE1wIdpsiiC (failed)
+  prop read: 01lr.SE1wIdpsiiC (failed)
+  old prop read: 01lr.SE1wIdpsiiC (failed)
+  prop read: iTwK.SE1wIdpsiiC (failed)
+  old prop read: iTwK.SE1wIdpsiiC (failed)
+  prop read: AfAP.SE1wIdpsiiC (failed)
+  old prop read: AfAP.SE1wIdpsiiC (failed)
+  prop read: dqQT.SE1wIdpsiiC (failed)
+  old prop read: dqQT.SE1wIdpsiiC (failed)
+  prop read: 8vbH.SE1wIdpsiiC (failed)
+  old prop read: 8vbH.SE1wIdpsiiC (failed)
+  prop read: b4sL.SE1wIdpsiiC (failed)
+  old prop read: b4sL.SE1wIdpsiiC (failed)
+  prop read: 2G6Q.SE1wIdpsiiC (failed)
+  old prop read: 2G6Q.SE1wIdpsiiC (failed)
+  prop read: VRMU.SE1wIdpsiiC (failed)
+  old prop read: VRMU.SE1wIdpsiiC (failed)
+  prop read: yccY.SE1wIdpsiiC (failed)
+  old prop read: yccY.SE1wIdpsiiC (failed)
+  prop read: Posc.SE1wIdpsiiC (failed)
+  old prop read: Posc.SE1wIdpsiiC (failed)
+  prop read: sz6h.SE1wIdpsiiC (failed)
+  old prop read: sz6h.SE1wIdpsiiC (failed)
+  prop read: ZQIA.SE1wIdpsiiC (failed)
+  old prop read: ZQIA.SE1wIdpsiiC (failed)
+  prop read: 0cYE.SE1wIdpsiiC (failed)
+  old prop read: 0cYE.SE1wIdpsiiC (failed)
+  prop read: TnoI.SE1wIdpsiiC (failed)
+  old prop read: TnoI.SE1wIdpsiiC (failed)
+  prop read: YVjZ.SE1wIdpsiiC (failed)
+  old prop read: YVjZ.SE1wIdpsiiC (failed)
+  prop read: +gzd.SE1wIdpsiiC (failed)
+  old prop read: +gzd.SE1wIdpsiiC (failed)
+  prop read: SsDi.SE1wIdpsiiC (failed)
+  old prop read: SsDi.SE1wIdpsiiC (failed)
+  prop read: v1Um.SE1wIdpsiiC (failed)
+  old prop read: v1Um.SE1wIdpsiiC (failed)
+  prop read: MDkq.SE1wIdpsiiC (failed)
+  old prop read: MDkq.SE1wIdpsiiC (failed)
+  prop read: pO_u.SE1wIdpsiiC (failed)
+  old prop read: pO_u.SE1wIdpsiiC (failed)
+  prop read: GaEz.SE1wIdpsiiC (failed)
+  old prop read: GaEz.SE1wIdpsiiC (failed)
+  prop read: y0QS.SE1wIdpsiiC (failed)
+  old prop read: y0QS.SE1wIdpsiiC (failed)
+  prop read: PCgW.SE1wIdpsiiC (failed)
+  old prop read: PCgW.SE1wIdpsiiC (failed)
+  prop read: sNwa.SE1wIdpsiiC (failed)
+  old prop read: sNwa.SE1wIdpsiiC (failed)
+  prop read: s19p.Fxp0d3BezAE (failed)
+  old prop read: s19p.Fxp0d3BezAE (failed)
+  prop read: d1y9.Fxp0d3BezAE (failed)
+  old prop read: d1y9.Fxp0d3BezAE (failed)
+  prop read: ygeg.Fxp0d3BezAE (failed)
+  old prop read: ygeg.Fxp0d3BezAE (failed)
+  prop read: UPWc.Fxp0d3BezAE (failed)
+  old prop read: UPWc.Fxp0d3BezAE (failed)
+  prop read: 2K8Y.Fxp0d3BezAE (failed)
+  old prop read: 2K8Y.Fxp0d3BezAE (failed)
+  prop read: a20U.Fxp0d3BezAE (failed)
+  old prop read: a20U.Fxp0d3BezAE (failed)
+  prop read: ghVL.Fxp0d3BezAE (failed)
+  old prop read: ghVL.Fxp0d3BezAE (failed)
+  prop read: JDPt.Fxp0d3BezAE (failed)
+  old prop read: JDPt.Fxp0d3BezAE (failed)
+  prop read: 4DCE.Fxp0d3BezAE (failed)
+  old prop read: 4DCE.Fxp0d3BezAE (failed)
+  prop read: Psuk.Fxp0d3BezAE (failed)
+  old prop read: Psuk.Fxp0d3BezAE (failed)
+  prop read: xamg.Fxp0d3BezAE (failed)
+  old prop read: xamg.Fxp0d3BezAE (failed)
+  prop read: VVOc.Fxp0d3BezAE (failed)
+  old prop read: VVOc.Fxp0d3BezAE (failed)
+  prop read: 1EGY.Fxp0d3BezAE (failed)
+  old prop read: 1EGY.Fxp0d3BezAE (failed)
+  prop read: k4bc.uJrfcCKKe8E (failed)
+  old prop read: k4bc.uJrfcCKKe8E (failed)
+  prop read: pBe4.PKweOZjtk19 (failed)
+  old prop read: pBe4.PKweOZjtk19 (failed)
+  prop read: rdCR.j8NaKXDZtZ6 (failed)
+  old prop read: rdCR.j8NaKXDZtZ6 (failed)
+  prop read: rdCR.j8NaKXDZtZ6 (failed)
+  old prop read: rdCR.j8NaKXDZtZ6 (failed)
+  prop read: rdCR.j8NaKXDZtZ6 (failed)
+  old prop read: rdCR.j8NaKXDZtZ6 (failed)
+  prop read: rdCR.j8NaKXDZtZ6 (failed)
+  old prop read: rdCR.j8NaKXDZtZ6 (failed)
+  prop read: nvtK.5lXXuQkv_C5 (failed)
+  old prop read: nvtK.5lXXuQkv_C5 (failed)
+  prop read: BRDC.GSopYcFr9cF (failed)
+  old prop read: BRDC.GSopYcFr9cF (failed)
+  prop read: WVs7.ndpeucax6V1 (failed)
+  old prop read: WVs7.ndpeucax6V1 (failed)
+  prop read: qyd6.ndpeucax6V1 (failed)
+  old prop read: qyd6.ndpeucax6V1 (failed)
+  prop read: jaEn.ndpeucax6V1 (failed)
+  old prop read: jaEn.ndpeucax6V1 (failed)
+  prop read: 3SHS.ndpeucax6V1 (failed)
+  old prop read: 3SHS.ndpeucax6V1 (failed)
+  prop read: pDke.ndpeucax6V1 (failed)
+  old prop read: pDke.ndpeucax6V1 (failed)
+  prop read: gKtr.ndpeucax6V1 (failed)
+  old prop read: gKtr.ndpeucax6V1 (failed)
+  prop read: usDW.ndpeucax6V1 (failed)
+  old prop read: usDW.ndpeucax6V1 (failed)
+  prop read: wtHE.GSopYcFr9cF (failed)
+  old prop read: wtHE.GSopYcFr9cF (failed)
+  prop read: tYU7.GSopYcFr9cF (failed)
+  old prop read: tYU7.GSopYcFr9cF (failed)
+  prop read: HtAv.GSopYcFr9cF (failed)
+  old prop read: HtAv.GSopYcFr9cF (failed)
+  prop read: AmUr.ndpeucax6V1 (failed)
+  old prop read: AmUr.ndpeucax6V1 (failed)
+  prop read: ZsBS.GQNx7L4uPNA (failed)
+  old prop read: ZsBS.GQNx7L4uPNA (failed)
+  prop read: GP_i.ndpeucax6V1 (failed)
+  old prop read: GP_i.ndpeucax6V1 (failed)
+  prop read: L2Ua.ndpeucax6V1 (failed)
+  old prop read: L2Ua.ndpeucax6V1 (failed)
+  prop read: R53u.ndpeucax6V1 (failed)
+  old prop read: R53u.ndpeucax6V1 (failed)
+----- kernel log -----
+  <4>[    4.940178] ssdk_led_init[152]:INFO:ssdk_led_mode:3, ssdk_led_map:3cc, ssdk_led_src_id:b
+  <4>[    4.948237] qca_appe_rss_hash_hw_init[595]:INFO:appe rss hash initialization: hash_seed 0xce6c8451
+  <4>[    4.955222] regi_init[3939]:INFO:Initializing APPE Done!!
+  <4>[    4.964034] regi_init[4007]:INFO:qca-ssdk module init succeeded!
+  <6>[    4.970431] tun: Universal TUN/TAP device driver, 1.6
+  <6>[    4.975822] gre: GRE over IPv4 demultiplexor driver
+  <6>[    4.980851] PPTP driver version 0.8.5
+  <6>[    5.040650] xt_ndpi v1.2 ndpi 4.9.0-5229-d6968fd IPv6=YES debug_message=no
+  <6>[    5.040650]  BT: hash_size 0k, hash_expiation 0 sec, log_size 128kb
+  <6>[    5.040650]  sizeof hash_ip4p_node=44 flow_struct=1120 packet_struct=1336
+  <6>[    5.040650]    flow_tcp_struct=108 flow_udp_struct=112 int_one_line_struct=16
+  <6>[    5.040650]  ndpi_ip_addr_t=16 ndpi_protocol=6 nf_ct_ext_ndpi=240
+  <6>[    5.040650]  flow_info=112 spinlock_t=4  NF_EXT_ID 7
+  <6>[    5.055428] xt_ndpi: MAX_PROTOCOLS 512 LAST_PROTOCOL 418
+  <6>[    5.077651] xt_ndpi: flow accounting ON
+  <6>[    5.096544] dp1: ppe offload disabled: 1 for macid 1
+  <6>[    5.096557] dp1: Switch attached to macid 1 status: 0
+  <3>[    5.100599] (unnamed net_device) (uninitialized): netif_napi_add() called with weight 512
+  <4>[    5.105892] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x1
+  <6>[    5.115639] dp2: ppe offload disabled: 1 for macid 2
+  <6>[    5.120471] dp2: Switch attached to macid 2 status: 0
+  <4>[    5.125510] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x2
+  <6>[    5.132331] dp3: ppe offload disabled: 1 for macid 3
+  <6>[    5.137122] dp3: Switch attached to macid 3 status: 0
+  <4>[    5.142142] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x3
+  <6>[    5.148928] dp4: ppe offload disabled: 1 for macid 4
+  <6>[    5.153790] dp4: Switch attached to macid 4 status: 0
+  <4>[    5.158804] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x4
+  <6>[    5.165633] dp5: ppe offload disabled: 0 for macid 5
+  <6>[    5.170476] dp5: Switch attached to macid 5 status: 0
+  <4>[    5.175477] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x5
+  <6>[    5.180818] dp6: ppe offload disabled: 0 for macid 6
+  <6>[    5.187125] dp6: Switch attached to macid 6 status: 0
+  <4>[    5.192134] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x6
+  <6>[    5.197474] **********************************************************
+  <6>[    5.203779] * NSS Data Plane driver
+  <6>[    5.210109] **********************************************************
+  <6>[    5.216780] l2tp_core: L2TP core driver, V2.0
+  <6>[    5.220530] l2tp_netlink: L2TP netlink interface
+  <6>[    5.225637] wireguard: WireGuard 1.0.20220627 loaded. See www.wireguard.com for information.
+  <6>[    5.229221] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+  <6>[    5.239057] ip_gre: GRE over IPv4 tunneling driver
+  <6>[    5.248192] ip6_gre: GRE over IPv6 tunneling driver
+  <6>[    5.253174] Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+  <5>[    5.297633] nss_ppe_lag_register_event[418]:ffffff803c8b2000: Bond interface (bond0) is created=0
+  <5>[    5.297651] nss_ppe_lag_init[614]:LAG Manager Installed
+  <4>[    5.308637] PPE-RULE module loaded successfully
+  <6>[    5.312523] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+  <6>[    5.317363] GACT probability on
+  <6>[    5.320224] Mirror/redirect action on
+  <6>[    5.325043] u32 classifier
+  <6>[    5.326727]     input device check on
+  <6>[    5.329345]     Actions configured
+  <4>[    5.337047] qcom-qusb2-phy 7b000.qusb: 7b000.qusb supply vdda-pll not found, using dummy regulator
+  <4>[    5.337091] qcom-qusb2-phy 7b000.qusb: 7b000.qusb supply vdda-phy-dpdm not found, using dummy regulator
+  <6>[    5.345457] qcom-qusb2-phy 7b000.qusb: Registered Qcom-QUSB2 phy
+  <6>[    5.355412] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+  <6>[    5.360873] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+  <6>[    5.367004] xhci-hcd xhci-hcd.0.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x0000000000010010
+  <6>[    5.373745] xhci-hcd xhci-hcd.0.auto: irq 88, io mem 0x08a00000
+  <6>[    5.383382] hub 1-0:1.0: USB hub found
+  <6>[    5.388996] hub 1-0:1.0: 1 port detected
+  <6>[    5.393030] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+  <6>[    5.396882] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+  <6>[    5.402186] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.0 SuperSpeed
+  <6>[    5.409746] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+  <6>[    5.416537] hub 2-0:1.0: USB hub found
+  <6>[    5.424621] hub 2-0:1.0: 1 port detected
+  <6>[    5.441447] IPsec XFRM device driver
+  <6>[    5.448091] xt_time: kernel timezone is -0000
+  <14>[    5.451636] kmodloader: done loading kernel modules from /etc/modules.d/*
+  <12>[    6.652988] /dev/loop0: recovering journal
+  <12>[    6.692180] /dev/loop0: clean, 21/8192 files, 5963/32768 blocks
+  <12>[    6.692184] 
+  <12>[    6.805452] /dev/loop2: recovering journal
+  <12>[    6.856345] /dev/loop2: clean, 22/214272 files, 567192/856064 blocks
+  <12>[    6.856349] 
+  <12>[    6.880183] /cfg mount time:
+  <6>[    6.908755] EXT4-fs (loop0): mounted filesystem with ordered data mode. Opts: (null)
+  <4>[    6.908777] ext4 filesystem being mounted at /cfg supports timestamps until 2038 (0x7fffffff)
+  <12>[    6.915693] real	0m 0.03s
+  <12>[    6.923970] user	0m 0.00s
+  <12>[    6.923970] sys	0m 0.00s
+  <6>[    7.005099] EXT4-fs (loop2): mounted filesystem with ordered data mode. Opts: (null)
+  <6>[    7.091689] Adding 2097148k swap on /a/swap.  Priority:-2 extents:7 across:2326524k SS
+  <12>[    7.234654] poe_util
+  <12>[   10.759872] Load PoE fw to chip success!
+  <12>[   10.759971] real	0m 3.52s
+  <12>[   10.759980] user	0m 1.09s
+  <12>[   10.759980] sys	0m 0.19s
+  <12>[   10.768128] PoE fw version : 0.0
+  <12>[   10.776259] Write total power
+  <12>[   10.776284] Total power       :    40.000 W
+  <12>[   10.776284] Power budget      :    40.000 W
+  <12>[   10.776284] Deliver power     :     0.000 W
+  <6>[   10.824693] ECM init
+  <6>[   10.824723] ECM database jhash random seed: 0xecf0cf9a
+  <6>[   10.825353] ECM init complete
+  <4>[   10.856706] edma_cfg_rx_rps[1591]:EDMA RPS configured to use 3 cores
+  <6>[   10.916100] lp5562 0-0030: internal clock used
+  <6>[   12.359085] br-lan: port 1(eth0) entered blocking state
+  <6>[   12.359091] br-lan: port 1(eth0) entered disabled state
+  <4>[   12.359189] nss_ppe_lag_update_slave[131]:ffffff803be0bb48: Upper dev is not LAG for dev: eth0
+  <4>[   12.359213] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x1
+  <6>[   12.359293] device eth0 entered promiscuous mode
+  <4>[   12.359793] Set globle Ageing time set to 300 which is same for all bridge
+  <6>[   12.362174] br-lan: port 2(eth1) entered blocking state
+  <6>[   12.362186] br-lan: port 2(eth1) entered disabled state
+  <4>[   12.362304] nss_ppe_lag_update_slave[131]:ffffff803be0bb48: Upper dev is not LAG for dev: eth1
+  <4>[   12.362332] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x2
+  <6>[   12.362418] device eth1 entered promiscuous mode
+  <4>[   12.362485] Set globle Ageing time set to 300 which is same for all bridge
+  <6>[   12.364313] br-lan: port 3(eth2) entered blocking state
+  <6>[   12.364327] br-lan: port 3(eth2) entered disabled state
+  <4>[   12.364979] nss_ppe_lag_update_slave[131]:ffffff803be0bb48: Upper dev is not LAG for dev: eth2
+  <4>[   12.365013] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x3
+  <6>[   12.365165] device eth2 entered promiscuous mode
+  <4>[   12.365253] Set globle Ageing time set to 300 which is same for all bridge
+  <6>[   12.366501] br-lan: port 4(eth5) entered blocking state
+  <6>[   12.366513] br-lan: port 4(eth5) entered disabled state
+  <4>[   12.368053] nss_ppe_lag_update_slave[131]:ffffff803be0bb48: Upper dev is not LAG for dev: eth5
+  <4>[   12.368086] ppe_port_vsi_get[477]:INFO:VSI is not configured on port 0x6
+  <6>[   12.368813] device eth5 entered promiscuous mode
+  <4>[   12.368963] Set globle Ageing time set to 300 which is same for all bridge
+  <6>[   14.584695] nss-dp 3a50c000.dp4 eth3: PHY Link up speed: 1000
+  <6>[   14.587911] IPv6: ADDRCONF(NETDEV_CHANGE): eth3: link becomes ready
+----- kernel log end -----
+----- /proc/modules -----
+  ecm 856064 0 - Live 0xffffffc009337000
+  qca_nss_sfe 372736 1 ecm, Live 0xffffffc0092db000
+  inspect 20480 0 - Live 0xffffffc0092d5000 (P)
+  ipt_REJECT 16384 0 - Live 0xffffffc0092cd000
+  ebtable_nat 16384 0 - Live 0xffffffc0092c5000
+  ebtable_filter 16384 0 - Live 0xffffffc0092bd000
+  ebtable_broute 16384 0 - Live 0xffffffc0092b5000
+  xt_u32 16384 0 - Live 0xffffffc0092ad000
+  xt_time 16384 0 - Live 0xffffffc0092a5000
+  xt_tcpudp 16384 0 - Live 0xffffffc00929d000
+  xt_tcpmss 16384 0 - Live 0xffffffc009295000
+  xt_string 16384 0 - Live 0xffffffc00928d000
+  xt_statistic 16384 0 - Live 0xffffffc009285000
+  xt_state 16384 0 - Live 0xffffffc00927d000
+  xt_recent 20480 0 - Live 0xffffffc009274000
+  xt_quota 16384 0 - Live 0xffffffc00926c000
+  xt_policy 16384 0 - Live 0xffffffc009264000
+  xt_pkttype 16384 0 - Live 0xffffffc00925c000
+  xt_physdev 16384 0 - Live 0xffffffc009254000
+  xt_owner 16384 0 - Live 0xffffffc00924c000
+  xt_nat 16384 0 - Live 0xffffffc009244000
+  xt_multiport 16384 0 - Live 0xffffffc00923c000
+  xt_mark 16384 0 - Live 0xffffffc009234000
+  xt_mac 16384 0 - Live 0xffffffc00922c000
+  xt_limit 16384 0 - Live 0xffffffc009224000
+  xt_length 16384 0 - Live 0xffffffc00921c000
+  xt_hl 16384 0 - Live 0xffffffc009214000
+  xt_helper 16384 0 - Live 0xffffffc00920c000
+  xt_hashlimit 20480 0 - Live 0xffffffc009203000
+  xt_esp 16384 0 - Live 0xffffffc0091fb000
+  xt_ecn 16384 0 - Live 0xffffffc0091f3000
+  xt_dscp 16384 0 - Live 0xffffffc0091eb000
+  xt_conntrack 16384 0 - Live 0xffffffc0091e3000
+  xt_connmark 16384 0 - Live 0xffffffc0091db000
+  xt_connlimit 16384 0 - Live 0xffffffc0091d3000
+  xt_connbytes 16384 0 - Live 0xffffffc0091cb000
+  xt_comment 16384 0 - Live 0xffffffc0091c3000
+  xt_bpf 16384 0 - Live 0xffffffc0091bb000
+  xt_addrtype 16384 0 - Live 0xffffffc0091b3000
+  xt_TRACE 16384 0 - Live 0xffffffc0091ab000
+  xt_TCPMSS 16384 0 - Live 0xffffffc0091a3000
+  xt_REDIRECT 16384 0 - Live 0xffffffc00919b000
+  xt_NETMAP 16384 0 - Live 0xffffffc009193000
+  xt_MASQUERADE 16384 0 - Live 0xffffffc00918b000
+  xt_LOG 16384 0 - Live 0xffffffc009183000
+  xt_HL 16384 0 - Live 0xffffffc00917b000
+  xt_FLOWOFFLOAD 16384 0 - Live 0xffffffc009173000
+  xt_DSCP 16384 0 - Live 0xffffffc00916b000
+  xt_CT 16384 0 - Live 0xffffffc009163000
+  xt_CLASSIFY 16384 0 - Live 0xffffffc009152000
+  xfrm_interface 20480 0 - Live 0xffffffc00915a000
+  ts_fsm 16384 0 - Live 0xffffffc00914a000
+  ts_bm 16384 0 - Live 0xffffffc009142000
+  sch_cake 32768 0 - Live 0xffffffc009136000
+  ppp_async 24576 0 - Live 0xffffffc00912c000
+  nf_reject_ipv4 16384 1 ipt_REJECT, Live 0xffffffc009127000
+  nf_nat_tftp 16384 0 - Live 0xffffffc00911f000
+  nf_nat_snmp_basic 16384 0 - Live 0xffffffc009117000
+  nf_nat_sip 20480 0 - Live 0xffffffc00910e000
+  nf_nat_pptp 16384 0 - Live 0xffffffc009109000
+  nf_nat_irc 16384 0 - Live 0xffffffc009104000
+  nf_nat_h323 20480 0 - Live 0xffffffc0090fe000
+  nf_nat_ftp 16384 0 - Live 0xffffffc0090f9000
+  nf_nat_amanda 16384 0 - Live 0xffffffc0090f4000
+  nf_log_ipv4 16384 0 - Live 0xffffffc0090ef000
+  nf_flow_table_hw 16384 1 - Live 0xffffffc0090ea000
+  nf_flow_table 24576 2 xt_FLOWOFFLOAD,nf_flow_table_hw, Live 0xffffffc0090e3000
+  nf_conntrack_tftp 16384 1 nf_nat_tftp, Live 0xffffffc0090de000
+  nf_conntrack_snmp 16384 1 nf_nat_snmp_basic, Live 0xffffffc0090d9000
+  nf_conntrack_sip 32768 1 nf_nat_sip, Live 0xffffffc0090d0000
+  nf_conntrack_rtcache 16384 0 - Live 0xffffffc0090cb000
+  nf_conntrack_pptp 16384 1 nf_nat_pptp, Live 0xffffffc0090c6000
+  nf_conntrack_netlink 36864 0 - Live 0xffffffc0090bc000
+  nf_conntrack_irc 16384 1 nf_nat_irc, Live 0xffffffc0090b7000
+  nf_conntrack_h323 57344 1 nf_nat_h323, Live 0xffffffc0090a8000
+  nf_conntrack_ftp 20480 1 nf_nat_ftp, Live 0xffffffc0090a2000
+  nf_conntrack_broadcast 16384 1 nf_conntrack_snmp, Live 0xffffffc00909d000
+  ts_kmp 16384 6 - Live 0xffffffc009098000
+  nf_conntrack_amanda 16384 1 nf_nat_amanda, Live 0xffffffc009093000
+  nf_conncount 16384 1 xt_connlimit, Live 0xffffffc00908e000
+  macvlan 24576 0 - Live 0xffffffc009087000
+  iptable_raw 16384 0 - Live 0xffffffc009082000
+  iptable_nat 16384 0 - Live 0xffffffc00907d000
+  iptable_mangle 16384 0 - Live 0xffffffc009078000
+  iptable_filter 16384 0 - Live 0xffffffc009073000
+  ipt_ah 16384 0 - Live 0xffffffc009065000
+  ipt_ECN 16384 0 - Live 0xffffffc009060000
+  ip6table_raw 16384 0 - Live 0xffffffc00906e000
+  ebtables 49152 3 ebtable_nat,ebtable_filter,ebtable_broute, Live 0xffffffc00904f000
+  ebt_vlan 16384 0 - Live 0xffffffc00904a000
+  ebt_stp 16384 0 - Live 0xffffffc009045000
+  ebt_redirect 16384 0 - Live 0xffffffc009040000
+  ebt_pkttype 16384 0 - Live 0xffffffc00903b000
+  ebt_mark_m 16384 0 - Live 0xffffffc009036000
+  ebt_mark 16384 0 - Live 0xffffffc009031000
+  ebt_limit 16384 0 - Live 0xffffffc00902c000
+  ebt_among 16384 0 - Live 0xffffffc009027000
+  ebt_802_3 16384 0 - Live 0xffffffc008f7b000
+  crc_ccitt 16384 1 ppp_async, Live 0xffffffc008e17000
+  phy_qcom_qusb2 20480 2 - Live 0xffffffc009021000
+  dwc3 45056 0 - Live 0xffffffc009011000
+  dwc3_qcom 16384 0 - Live 0xffffffc00900c000
+  sch_tbf 16384 0 - Live 0xffffffc009007000
+  sch_ingress 16384 0 - Live 0xffffffc009002000
+  sch_htb 24576 0 - Live 0xffffffc008ff7000
+  sch_hfsc 24576 0 - Live 0xffffffc008ff0000
+  em_u32 16384 0 - Live 0xffffffc008feb000
+  cls_u32 24576 0 - Live 0xffffffc008fe4000
+  cls_tcindex 20480 0 - Live 0xffffffc008fde000
+  cls_route 20480 0 - Live 0xffffffc008fd8000
+  cls_matchall 16384 0 - Live 0xffffffc008fd3000
+  cls_fw 16384 0 - Live 0xffffffc008fce000
+  cls_flow 20480 0 - Live 0xffffffc008fc8000
+  cls_basic 16384 0 - Live 0xffffffc008fc3000
+  act_skbedit 16384 0 - Live 0xffffffc008fbe000
+  act_mirred 16384 0 - Live 0xffffffc008fb9000
+  act_gact 16384 0 - Live 0xffffffc008fb4000
+  qca_nss_ppe_tunipip6 16384 0 - Live 0xffffffc008faf000
+  qca_nss_ppe_vxlanmgr 24576 0 - Live 0xffffffc008fa8000
+  qca_nss_ppe_netlink 16384 0 - Live 0xffffffc008fa3000
+  qca_nss_ppe_mapt 16384 0 - Live 0xffffffc008f9e000
+  qca_nss_ppe_l2tp 24576 0 - Live 0xffffffc008f97000
+  l2tp_ppp 28672 2 ecm,qca_nss_ppe_l2tp, Live 0xffffffc008f8f000
+  qca_nss_ppe_gretap 16384 0 - Live 0xffffffc008f8a000
+  qca_nss_ppe_tun 36864 5 qca_nss_ppe_tunipip6,qca_nss_ppe_vxlanmgr,qca_nss_ppe_mapt,qca_nss_ppe_l2tp,qca_nss_ppe_gretap, Live 0xffffffc008f80000
+  qca_nss_ppe_rule 122880 3 qca_nss_sfe,qca_nss_ppe_netlink,qca_nss_ppe_tun, Live 0xffffffc008f5c000
+  qca_nss_ppe_qdisc 94208 0 - Live 0xffffffc008f44000
+  qca_nss_ppe_pppoe_mgr 16384 0 - Live 0xffffffc008b59000
+  qca_nss_ppe_lag 20480 0 - Live 0xffffffc008da6000
+  qca_nss_ppe_ds 24576 0 - Live 0xffffffc008f3d000
+  qca_nss_ppe_bridge_mgr 32768 0 - Live 0xffffffc008f34000
+  qca_nss_ppe_vlan 36864 2 qca_nss_ppe_lag,qca_nss_ppe_bridge_mgr, Live 0xffffffc008f2a000
+  qca_nss_ppe_vp 61440 2 qca_nss_ppe_tun,qca_nss_ppe_ds, Live 0xffffffc008f16000
+  xt_set 16384 0 - Live 0xffffffc008f0e000
+  ip_set_list_set 20480 0 - Live 0xffffffc008f05000
+  ip_set_hash_netportnet 40960 0 - Live 0xffffffc008ef7000
+  ip_set_hash_netport 40960 0 - Live 0xffffffc008ee9000
+  ip_set_hash_netnet 40960 0 - Live 0xffffffc008edb000
+  ip_set_hash_netiface 40960 0 - Live 0xffffffc008ecd000
+  ip_set_hash_net 36864 0 - Live 0xffffffc008ec0000
+  ip_set_hash_mac 24576 0 - Live 0xffffffc008eb6000
+  ip_set_hash_ipportnet 40960 0 - Live 0xffffffc008ea8000
+  ip_set_hash_ipportip 36864 0 - Live 0xffffffc008e9b000
+  ip_set_hash_ipport 36864 0 - Live 0xffffffc008e8e000
+  ip_set_hash_ipmark 36864 0 - Live 0xffffffc008e81000
+  ip_set_hash_ip 36864 0 - Live 0xffffffc008e74000
+  ip_set_bitmap_port 16384 0 - Live 0xffffffc008e6c000
+  ip_set_bitmap_ipmac 20480 0 - Live 0xffffffc008e63000
+  ip_set_bitmap_ip 20480 0 - Live 0xffffffc008e5a000
+  ip_set 40960 16 xt_set,ip_set_list_set,ip_set_hash_netportnet,ip_set_hash_netport,ip_set_hash_netnet,ip_set_hash_netiface,ip_set_hash_net,ip_set_hash_mac,ip_set_hash_ipportnet,ip_set_hash_ipportip,ip_set_hash_ipport,ip_set_hash_ipmark,ip_set_hash_ip,ip_set_bitmap_port,ip_set_bitmap_ipmac,ip_set_bitmap_ip, Live 0xffffffc008e4b000
+  nfnetlink 16384 2 nf_conntrack_netlink,ip_set, Live 0xffffffc008e43000
+  ip6table_nat 16384 0 - Live 0xffffffc008e3b000
+  nf_nat 36864 13 xt_nat,xt_REDIRECT,xt_NETMAP,xt_MASQUERADE,nf_nat_tftp,nf_nat_sip,nf_nat_pptp,nf_nat_irc,nf_nat_h323,nf_nat_ftp,nf_nat_amanda,iptable_nat,ip6table_nat, Live 0xffffffc008e2d000
+  ip6t_NPT 16384 0 - Live 0xffffffc008e25000
+  nf_log_ipv6 16384 0 - Live 0xffffffc008e1d000
+  nf_log_common 16384 2 nf_log_ipv4,nf_log_ipv6, Live 0xffffffc008e0c000
+  ip6table_mangle 16384 0 - Live 0xffffffc008e04000
+  ip6table_filter 16384 0 - Live 0xffffffc008e12000
+  ip6t_REJECT 16384 0 - Live 0xffffffc008dfc000
+  nf_reject_ipv6 16384 1 ip6t_REJECT, Live 0xffffffc008df7000
+  bonding 126976 3 ecm,qca_nss_ppe_pppoe_mgr,qca_nss_ppe_vlan, Live 0xffffffc008dd7000
+  ip6_gre 36864 0 - Live 0xffffffc008dc9000
+  ip_gre 32768 1 qca_nss_ppe_gretap, Live 0xffffffc008dbd000
+  ifb 16384 0 - Live 0xffffffc008db5000
+  dummy 16384 0 - Live 0xffffffc008dad000
+  wireguard 131072 0 - Live 0xffffffc008d85000
+  l2tp_netlink 24576 1 l2tp_ppp, Live 0xffffffc008d7e000
+  l2tp_core 28672 3 qca_nss_ppe_l2tp,l2tp_ppp,l2tp_netlink, Live 0xffffffc008d76000
+  ipcomp6 16384 0 - Live 0xffffffc008d71000
+  xfrm6_tunnel 16384 1 ipcomp6, Live 0xffffffc008cfe000
+  esp6 20480 0 - Live 0xffffffc008cf8000
+  ah6 16384 0 - Live 0xffffffc008cf3000
+  xfrm4_tunnel 16384 0 - Live 0xffffffc008bb9000
+  ipcomp 16384 0 - Live 0xffffffc008b6b000
+  esp4 20480 0 - Live 0xffffffc008b65000
+  ah4 16384 0 - Live 0xffffffc008b60000
+  ip6_tunnel 40960 2 qca_nss_ppe_tunipip6,ip6_gre, Live 0xffffffc008b2c000
+  qca_nss_dp 122880 2 qca_nss_ppe_ds,qca_nss_ppe_vp, Live 0xffffffc008b3a000
+  qca_nss_ppe 446464 11 ecm,qca_nss_ppe_tun,qca_nss_ppe_rule,qca_nss_ppe_qdisc,qca_nss_ppe_pppoe_mgr,qca_nss_ppe_lag,qca_nss_ppe_ds,qca_nss_ppe_bridge_mgr,qca_nss_ppe_vlan,qca_nss_ppe_vp,qca_nss_dp, Live 0xffffffc008d03000
+  tunnel6 16384 2 xfrm6_tunnel,ip6_tunnel, Live 0xffffffc008b27000
+  tunnel4 16384 1 xfrm4_tunnel, Live 0xffffffc0088e1000
+  ip_tunnel 24576 1 ip_gre, Live 0xffffffc008b20000
+  ip6_tables 36864 4 ip6table_raw,ip6table_nat,ip6table_mangle,ip6table_filter, Live 0xffffffc008b16000
+  ip_tables 36864 4 iptable_raw,iptable_nat,iptable_mangle,iptable_filter, Live 0xffffffc008b0c000
+  xt_ndpi 1253376 0 - Live 0xffffffc008bc0000
+  nf_conntrack 98304 36 ecm,xt_state,xt_nat,xt_helper,xt_conntrack,xt_connmark,xt_connlimit,xt_connbytes,xt_REDIRECT,xt_NETMAP,xt_MASQUERADE,xt_DSCP,xt_CT,nf_nat_tftp,nf_nat_snmp_basic,nf_nat_sip,nf_nat_pptp,nf_nat_irc,nf_nat_h323,nf_nat_ftp,nf_nat_amanda,nf_flow_table,nf_conntrack_tftp,nf_conntrack_snmp,nf_conntrack_sip,nf_conntrack_rtcache,nf_conntrack_pptp,nf_conntrack_netlink,nf_conntrack_irc,nf_conntrack_h323,nf_conntrack_ftp,nf_conntrack_broadcast,nf_conntrack_amanda,nf_conncount,nf_nat,xt_ndpi, Live 0xffffffc008ba0000
+  x_tables 32768 68 ipt_REJECT,xt_u32,xt_time,xt_tcpudp,xt_tcpmss,xt_string,xt_statistic,xt_state,xt_recent,xt_quota,xt_policy,xt_pkttype,xt_physdev,xt_owner,xt_nat,xt_multiport,xt_mark,xt_mac,xt_limit,xt_length,xt_hl,xt_helper,xt_hashlimit,xt_esp,xt_ecn,xt_dscp,xt_conntrack,xt_connmark,xt_connlimit,xt_connbytes,xt_comment,xt_bpf,xt_addrtype,xt_TRACE,xt_TCPMSS,xt_REDIRECT,xt_NETMAP,xt_MASQUERADE,xt_LOG,xt_HL,xt_FLOWOFFLOAD,xt_DSCP,xt_CT,xt_CLASSIFY,iptable_raw,iptable_mangle,iptable_filter,ipt_ah,ipt_ECN,ip6table_raw,ebtables,ebt_vlan,ebt_stp,ebt_redirect,ebt_pkttype,ebt_mark_m,ebt_mark,ebt_limit,ebt_among,ebt_802_3,xt_set,ip6t_NPT,ip6table_mangle,ip6table_filter,ip6t_REJECT,ip6_tables,ip_tables,xt_ndpi, Live 0xffffffc008b93000
+  pptp 28672 2 ecm,nf_conntrack, Live 0xffffffc008b87000
+  nf_defrag_ipv4 16384 1 nf_conntrack, Live 0xffffffc008b82000
+  gre 16384 3 ip6_gre,ip_gre,pptp, Live 0xffffffc008b7d000
+  tun 49152 0 - Live 0xffffffc008b70000
+  qca_ssdk 2027520 9 inspect,qca_nss_dp,qca_nss_ppe, Live 0xffffffc00891c000
+  nat46 40960 3 ecm,qca_nss_ppe_mapt,qca_nss_ppe, Live 0xffffffc00890d000
+  nf_defrag_ipv6 16384 2 nf_conntrack,nat46, Live 0xffffffc008908000
+  xfrm_user 36864 0 - Live 0xffffffc0088fa000
+  xfrm_ipcomp 16384 2 ipcomp6,ipcomp, Live 0xffffffc0088f5000
+  af_key 32768 0 - Live 0xffffffc0088ec000
+  xfrm_algo 16384 7 esp6,ah6,esp4,ah4,xfrm_user,xfrm_ipcomp,af_key, Live 0xffffffc0088e7000
+  vxlan 57344 2 ecm,qca_nss_ppe_vxlanmgr, Live 0xffffffc0088d2000
+  udp_tunnel 16384 3 wireguard,l2tp_core,vxlan, Live 0xffffffc0088cd000
+  ip6_udp_tunnel 16384 3 wireguard,l2tp_core,vxlan, Live 0xffffffc0087ef000
+  pppoe 24576 3 ecm,qca_nss_sfe,qca_nss_ppe_pppoe_mgr, Live 0xffffffc0088c6000
+  pppox 16384 3 l2tp_ppp,pptp,pppoe, Live 0xffffffc0088be000
+  ppp_generic 49152 9 ecm,qca_nss_sfe,ppp_async,qca_nss_ppe_l2tp,l2tp_ppp,qca_nss_ppe_pppoe_mgr,pptp,pppoe,pppox, Live 0xffffffc0088ad000
+  slhc 16384 1 ppp_generic, Live 0xffffffc0088a8000
+  crypto_user 16384 0 - Live 0xffffffc0088a0000
+  algif_skcipher 16384 0 - Live 0xffffffc00889b000
+  algif_rng 16384 0 - Live 0xffffffc008896000
+  algif_hash 16384 0 - Live 0xffffffc008828000
+  algif_aead 16384 0 - Live 0xffffffc008861000
+  af_alg 20480 4 algif_skcipher,algif_rng,algif_hash,algif_aead, Live 0xffffffc008890000
+  md5 16384 0 - Live 0xffffffc008823000
+  authenc 16384 0 - Live 0xffffffc0087ea000
+  usb_storage 57344 0 - Live 0xffffffc008881000
+  leds_gpio 16384 0 - Live 0xffffffc008879000
+  xhci_plat_hcd 16384 0 - Live 0xffffffc008870000
+  xhci_pci 16384 0 - Live 0xffffffc008867000
+  xhci_hcd 151552 2 xhci_plat_hcd,xhci_pci, Live 0xffffffc00883b000
+  sd_mod 36864 0 - Live 0xffffffc00882d000
+  scsi_mod 110592 2 usb_storage,sd_mod, Live 0xffffffc008807000
+  gpio_button_hotplug 16384 0 - Live 0xffffffc0087ff000
+  udc_core 24576 0 - Live 0xffffffc0087f4000
+  usbcore 233472 4 usb_storage,xhci_plat_hcd,xhci_pci,xhci_hcd, Live 0xffffffc0087b0000
+  nls_base 20480 1 usbcore, Live 0xffffffc0087a8000
+  usb_common 16384 6 dwc3,dwc3_qcom,xhci_plat_hcd,xhci_hcd,udc_core,usbcore, Live 0xffffffc0087a0000
+----- /proc/modules end -----
+  used irqs: 4,6,8,9,10,11,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,61,62
+=========== end debug info ============
+01: None 00.0: 10107 System
+  [Created at sys.64]
+  Unique ID: rdCR.n_7QNeEnh23
+  Hardware Class: system
+  Model: "System"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+06: None 00.0: 10102 Main Memory
+  [Created at memory.74]
+  Unique ID: rdCR.CxwsZFjVASF
+  Hardware Class: memory
+  Model: "Main Memory"
+  Memory Range: 0x00000000-0x3d2d2fff (rw)
+  Memory Size: 960 MB
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+07: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: jnVm.TfPFe67fIBB
+  SysFS ID: /devices/platform/soc/3a500000.dp1
+  SysFS BusID: 3a500000.dp1
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth0
+  HW Address: bc:b9:23:81:2a:78
+  Permanent HW Address: bc:b9:23:81:2a:78
+  Link detected: no
+  Module Alias: "of:Ndp1TnetworkCqcom,nss-dp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+08: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: 7grC.TfPFe67fIBB
+  SysFS ID: /devices/platform/soc/3a514000.dp6
+  SysFS BusID: 3a514000.dp6
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth5
+  HW Address: be:b9:23:84:2a:78
+  Permanent HW Address: be:b9:23:84:2a:78
+  Link detected: no
+  Module Alias: "of:Ndp6TnetworkCqcom,nss-dp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+09: None 00.0: 0c03 USB Controller (XHCI)
+  [Created at pci.1082]
+  Unique ID: N8N7.vcc7vMyNqX6
+  SysFS ID: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto
+  SysFS BusID: xhci-hcd.0.auto
+  Hardware Class: usb controller
+  Model: "ARM USB XHCI controller"
+  Device: "ARM USB XHCI controller"
+  Driver: "xhci-hcd"
+  Driver Modules: "xhci_plat_hcd"
+  Module Alias: "platform:xhci-hcd"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+10: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: dVuc.TfPFe67fIBB
+  SysFS ID: /devices/platform/soc/3a508000.dp3
+  SysFS BusID: 3a508000.dp3
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth2
+  HW Address: be:b9:23:83:2a:78
+  Permanent HW Address: be:b9:23:83:2a:78
+  Link detected: no
+  Module Alias: "of:Ndp3TnetworkCqcom,nss-dp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+11: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: D_l_.TfPFe67fIBB
+  SysFS ID: /devices/platform/soc/3a510000.dp5
+  SysFS BusID: 3a510000.dp5
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth4
+  HW Address: bc:b9:23:81:2a:7a
+  Permanent HW Address: bc:b9:23:81:2a:7a
+  Link detected: no
+  Module Alias: "of:Ndp5TnetworkCqcom,nss-dp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+12: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: zD5l.TfPFe67fIBB
+  SysFS ID: /devices/platform/soc/3a50c000.dp4
+  SysFS BusID: 3a50c000.dp4
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth3
+  HW Address: bc:b9:23:81:2a:79
+  Permanent HW Address: bc:b9:23:81:2a:79
+  Link detected: yes
+  Module Alias: "of:Ndp4TnetworkCqcom,nss-dp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+13: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: dTb_.TfPFe67fIBB
+  SysFS ID: /devices/platform/soc/3a504000.dp2
+  SysFS BusID: 3a504000.dp2
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth1
+  HW Address: be:b9:23:82:2a:78
+  Permanent HW Address: be:b9:23:82:2a:78
+  Link detected: no
+  Module Alias: "of:Ndp2TnetworkCqcom,nss-dp"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+14: MMC 00.0: 11700 MMC Controller
+  [Created at pci.1903]
+  Unique ID: b0_u.TzQFl_vZhO4
+  SysFS ID: /devices/platform/soc/7804000.sdhci/mmc_host/mmc0/mmc0:0001
+  SysFS BusID: mmc0:0001
+  Model: "MMC Controller"
+  Vendor: int 0x6015 
+  Device: int 0x0000 "MMC Controller"
+  Driver: "mmcblk"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+15: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: 7tlP.Fxp0d3BezAE
+  SysFS ID: /class/block/ram2
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram2
+  Device Number: block 1:2
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+16: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: CWFH.Fxp0d3BezAE
+  SysFS ID: /class/block/ram0
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram0
+  Device Number: block 1:0
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+17: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: XOSI.Fxp0d3BezAE
+  SysFS ID: /class/block/ram9
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram9
+  Device Number: block 1:9
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+18: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: HAKk.Fxp0d3BezAE
+  Parent ID: b0_u.TzQFl_vZhO4
+  SysFS ID: /class/block/mmcblk0
+  SysFS BusID: mmc0:0001
+  SysFS Device Link: /devices/platform/soc/7804000.sdhci/mmc_host/mmc0/mmc0:0001
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "sdhci_msm", "mmcblk"
+  Device File: /dev/mmcblk0
+  Device Number: block 179:0-179:31
+  Geometry (Logical): CHS 119296/4/16
+  Size: 7634944 sectors a 512 bytes
+  Capacity: 3 GB (3909091328 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #14 (MMC Controller)
+
+19: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: l7UW.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p1
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p1
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+20: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: CJka.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p2
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p2
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+21: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: fU_e.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p3
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p3
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+22: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: 6gEj.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p4
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p4
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+23: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: ZrUn.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p5
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p5
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+24: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: 01lr.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p6
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p6
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+25: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: iTwK.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p7
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p7
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+26: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: AfAP.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p8
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p8
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+27: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: dqQT.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p9
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p9
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+28: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: 8vbH.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p10
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p10
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+29: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: b4sL.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p11
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p11
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+30: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: 2G6Q.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p12
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p12
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+31: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: VRMU.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p13
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p13
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+32: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: yccY.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p14
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p14
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+33: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: Posc.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p15
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p15
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+34: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: sz6h.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p16
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p16
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+35: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: ZQIA.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p17
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p17
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+36: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: 0cYE.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p18
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p18
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+37: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: TnoI.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p19
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p19
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+38: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: YVjZ.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p20
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p20
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+39: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: +gzd.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p21
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p21
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+40: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: SsDi.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p22
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p22
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+41: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: v1Um.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p23
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p23
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+42: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: MDkq.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p24
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p24
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+43: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: pO_u.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p25
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p25
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+44: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: GaEz.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p26
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p26
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+45: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: y0QS.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p27
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p27
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+46: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: PCgW.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p28
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p28
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+47: None 00.0: 11300 Partition
+  [Created at block.434]
+  Unique ID: sNwa.SE1wIdpsiiC
+  Parent ID: HAKk.Fxp0d3BezAE
+  SysFS ID: /class/block/mmcblk0/mmcblk0p29
+  Hardware Class: partition
+  Model: "Partition"
+  Device File: /dev/mmcblk0p29
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #18 (Disk)
+
+48: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: s19p.Fxp0d3BezAE
+  SysFS ID: /class/block/ram14
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram14
+  Device Number: block 1:14
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+49: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: d1y9.Fxp0d3BezAE
+  SysFS ID: /class/block/ram7
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram7
+  Device Number: block 1:7
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+50: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: ygeg.Fxp0d3BezAE
+  SysFS ID: /class/block/ram12
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram12
+  Device Number: block 1:12
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+51: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: UPWc.Fxp0d3BezAE
+  SysFS ID: /class/block/ram5
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram5
+  Device Number: block 1:5
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+52: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: 2K8Y.Fxp0d3BezAE
+  SysFS ID: /class/block/ram10
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram10
+  Device Number: block 1:10
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+53: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: a20U.Fxp0d3BezAE
+  SysFS ID: /class/block/ram3
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram3
+  Device Number: block 1:3
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+54: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: ghVL.Fxp0d3BezAE
+  SysFS ID: /class/block/ram1
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram1
+  Device Number: block 1:1
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+55: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: JDPt.Fxp0d3BezAE
+  SysFS ID: /class/block/ram15
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram15
+  Device Number: block 1:15
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+56: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: 4DCE.Fxp0d3BezAE
+  SysFS ID: /class/block/ram8
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram8
+  Device Number: block 1:8
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+57: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: Psuk.Fxp0d3BezAE
+  SysFS ID: /class/block/ram13
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram13
+  Device Number: block 1:13
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+58: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: xamg.Fxp0d3BezAE
+  SysFS ID: /class/block/ram6
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram6
+  Device Number: block 1:6
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+59: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: VVOc.Fxp0d3BezAE
+  SysFS ID: /class/block/ram11
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram11
+  Device Number: block 1:11
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+60: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: 1EGY.Fxp0d3BezAE
+  SysFS ID: /class/block/ram4
+  Hardware Class: disk
+  Model: "Disk"
+  Device File: /dev/ram4
+  Device Number: block 1:4
+  Size: 8192 sectors a 512 bytes
+  Capacity: 0 GB (4194304 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+61: USB 00.0: 10a00 Hub
+  [Created at usb.122]
+  Unique ID: k4bc.uJrfcCKKe8E
+  Parent ID: N8N7.vcc7vMyNqX6
+  SysFS ID: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb1/1-0:1.0
+  SysFS BusID: 1-0:1.0
+  Hardware Class: hub
+  Model: "Linux Foundation 2.0 root hub"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux Foundation"
+  Device: usb 0x0002 "2.0 root hub"
+  Revision: "5.04"
+  Serial ID: "xhci-hcd.0.auto"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Speed: 480 Mbps
+  Module Alias: "usb:v1D6Bp0002d0504dc09dsc00dp01ic09isc00ip00in00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #9 (USB Controller)
+
+62: USB 00.0: 10a00 Hub
+  [Created at usb.122]
+  Unique ID: pBe4.PKweOZjtk19
+  Parent ID: N8N7.vcc7vMyNqX6
+  SysFS ID: /devices/platform/soc/8af8800.usb3/8a00000.dwc3/xhci-hcd.0.auto/usb2/2-0:1.0
+  SysFS BusID: 2-0:1.0
+  Hardware Class: hub
+  Model: "Linux Foundation 3.0 root hub"
+  Hotplug: USB
+  Vendor: usb 0x1d6b "Linux Foundation"
+  Device: usb 0x0003 "3.0 root hub"
+  Revision: "5.04"
+  Serial ID: "xhci-hcd.0.auto"
+  Driver: "hub"
+  Driver Modules: "usbcore"
+  Module Alias: "usb:v1D6Bp0003d0504dc09dsc00dp03ic09isc00ip00in00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #9 (USB Controller)
+
+63: None 00.0: 10103 CPU
+  [Created at cpu.340]
+  Unique ID: rdCR.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: AArch64
+  Vendor: "ARM Limited"
+  Model: 1.0.0 ""
+  Features: fp,asimd,evtstrm,aes,pmull,sha1,sha2,crc32,cpuid
+  BogoMips: 48.00
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+64: None 00.0: 10103 CPU
+  [Created at cpu.340]
+  Unique ID: rdCR.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: AArch64
+  Vendor: "ARM Limited"
+  Model: 1.0.0 ""
+  Features: fp,asimd,evtstrm,aes,pmull,sha1,sha2,crc32,cpuid
+  BogoMips: 48.00
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+65: None 00.0: 10103 CPU
+  [Created at cpu.340]
+  Unique ID: rdCR.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: AArch64
+  Vendor: "ARM Limited"
+  Model: 1.0.0 ""
+  Features: fp,asimd,evtstrm,aes,pmull,sha1,sha2,crc32,cpuid
+  BogoMips: 48.00
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+66: None 00.0: 10103 CPU
+  [Created at cpu.340]
+  Unique ID: rdCR.j8NaKXDZtZ6
+  Hardware Class: cpu
+  Arch: AArch64
+  Vendor: "ARM Limited"
+  Model: 1.0.0 ""
+  Features: fp,asimd,evtstrm,aes,pmull,sha1,sha2,crc32,cpuid
+  BogoMips: 48.00
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+67: Serial 00.0: 10801 Console
+  [Created at kbd.165]
+  Unique ID: nvtK.5lXXuQkv_C5
+  Hardware Class: keyboard
+  Model: "serial console"
+  Device: "serial console"
+  Device File: /dev/ttyMSM0
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+68: None 00.0: 10780 Network Interface
+  [Created at net.126]
+  Unique ID: BRDC.GSopYcFr9cF
+  SysFS ID: /class/net/ip6gre0
+  Hardware Class: network interface
+  Model: "Network Interface"
+  Device File: ip6gre0
+  Permanent HW Address: 02:24:d1:a4:c2:ab:00:00:00:00:00:00:00:00:00:00
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+69: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: WVs7.ndpeucax6V1
+  SysFS ID: /class/net/dummy0
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "dummy"
+  Device File: dummy0
+  HW Address: fa:14:f5:40:6f:d7
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+70: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: qyd6.ndpeucax6V1
+  SysFS ID: /class/net/gretap0
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Device File: gretap0
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+71: None 04.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: jaEn.ndpeucax6V1
+  Parent ID: D_l_.TfPFe67fIBB
+  SysFS ID: /class/net/eth4
+  SysFS Device Link: /devices/platform/soc/3a510000.dp5
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth4
+  HW Address: bc:b9:23:81:2a:7a
+  Permanent HW Address: bc:b9:23:81:2a:7a
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #11 (Ethernet controller)
+
+72: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: 3SHS.ndpeucax6V1
+  SysFS ID: /class/net/erspan0
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Device File: erspan0
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+73: None 02.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: pDke.ndpeucax6V1
+  Parent ID: dVuc.TfPFe67fIBB
+  SysFS ID: /class/net/eth2
+  SysFS Device Link: /devices/platform/soc/3a508000.dp3
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth2
+  HW Address: be:b9:23:83:2a:78
+  Permanent HW Address: be:b9:23:83:2a:78
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #10 (Ethernet controller)
+
+74: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: gKtr.ndpeucax6V1
+  SysFS ID: /class/net/br-lan
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "bridge"
+  Device File: br-lan
+  HW Address: bc:b9:23:81:2a:78
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+75: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: usDW.ndpeucax6V1
+  Parent ID: jnVm.TfPFe67fIBB
+  SysFS ID: /class/net/eth0
+  SysFS Device Link: /devices/platform/soc/3a500000.dp1
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth0
+  HW Address: bc:b9:23:81:2a:78
+  Permanent HW Address: bc:b9:23:81:2a:78
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #7 (Ethernet controller)
+
+76: None 00.0: 10780 Network Interface
+  [Created at net.126]
+  Unique ID: wtHE.GSopYcFr9cF
+  SysFS ID: /class/net/gre0
+  Hardware Class: network interface
+  Model: "Network Interface"
+  Device File: gre0
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+77: None 00.0: 10780 Network Interface
+  [Created at net.126]
+  Unique ID: tYU7.GSopYcFr9cF
+  SysFS ID: /class/net/miireg
+  Hardware Class: network interface
+  Model: "Network Interface"
+  Device File: miireg
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+78: None 00.0: 10780 Network Interface
+  [Created at net.126]
+  Unique ID: HtAv.GSopYcFr9cF
+  SysFS ID: /class/net/ip6tnl0
+  Hardware Class: network interface
+  Model: "Network Interface"
+  Device File: ip6tnl0
+  Permanent HW Address: 92:72:71:e0:df:45:00:00:00:00:00:00:00:00:00:00
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+79: None 05.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: AmUr.ndpeucax6V1
+  Parent ID: 7grC.TfPFe67fIBB
+  SysFS ID: /class/net/eth5
+  SysFS Device Link: /devices/platform/soc/3a514000.dp6
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth5
+  HW Address: be:b9:23:84:2a:78
+  Permanent HW Address: be:b9:23:84:2a:78
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #8 (Ethernet controller)
+
+80: None 00.0: 10700 Loopback
+  [Created at net.126]
+  Unique ID: ZsBS.GQNx7L4uPNA
+  SysFS ID: /class/net/lo
+  Hardware Class: network interface
+  Model: "Loopback network interface"
+  Device File: lo
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+81: None 03.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: GP_i.ndpeucax6V1
+  Parent ID: zD5l.TfPFe67fIBB
+  SysFS ID: /class/net/eth3
+  SysFS Device Link: /devices/platform/soc/3a50c000.dp4
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth3
+  HW Address: bc:b9:23:81:2a:79
+  Permanent HW Address: bc:b9:23:81:2a:79
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #12 (Ethernet controller)
+
+82: None 01.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: L2Ua.ndpeucax6V1
+  Parent ID: dTb_.TfPFe67fIBB
+  SysFS ID: /class/net/eth1
+  SysFS Device Link: /devices/platform/soc/3a504000.dp2
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "nss-dp"
+  Driver Modules: "qca_nss_dp"
+  Device File: eth1
+  HW Address: be:b9:23:82:2a:78
+  Permanent HW Address: be:b9:23:82:2a:78
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #13 (Ethernet controller)
+
+83: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: R53u.ndpeucax6V1
+  SysFS ID: /class/net/bond0
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "bonding"
+  Device File: bond0
+  HW Address: ce:93:e5:40:e8:d7
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
